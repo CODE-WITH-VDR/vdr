@@ -14,12 +14,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         #btnScrollToTop{
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+            position:absolute;
+            left: 2px;
+            border-radius: 5%;
             background: white;
             box-shadow: 0 0 10px rgb(0, 0, 0,0.25);
             color: black;
@@ -114,9 +111,9 @@
     </div>
     <hr class="hrs1">
     <section class="contact " id="contact">
-        <h1 class="text-center">Contact us</h1>
+        <h1 class="text-center">Contact me</h1>
         <div class="form">
-            <form id="form">
+            <form id="google-sheet">
                 <input type="text" name="Name" id="name" placeholder="Enter your name" required>
                 <br>
                 <input type="text" name="PhoneNo" id="phno" placeholder="Enter your phone" required>
@@ -132,7 +129,7 @@
     <hr class="hrs">
 
     <a href="index.html"><button id="btnScrollToTop"> <i class="material-icons">arrow_left</i> </button></a> 
-    <p class="main text-small">CLICK HERE TO GO BACK MAINPAGE</p><hr class="hrs">
+    <pre><p class="main text-small">          <<-------CLICK HERE TO GO BACK MAINPAGE</p></pre><br><hr class="hrs">
     <marquee>
     <p class="text-big">CREDITS:-V DURGESHWAR RAO</p>
     <h1 class="text-big">YOU CAN ACCESS MY PYTHON FILES: <a href="https://1drv.ms/u/s!Aoppi5HSZfS4hWZ-HJaucFLm7CYK?e=WaH5if">CLICK HERE TO OPEN</a></h1>
@@ -160,5 +157,26 @@
         document.body.classList.toggle('dark-theme');
         });
     </script>
+    <script>
+        const themeSwitch = document.querySelector('input');
+        themeSwitch.addEventListener('change', () => {
+        document.body.classList.toggle('dark-theme');
+        });
+    </script>
+    <script>
+        const f = document.getElementById('example');
+        const q = document.getElementById('query');
+        const google = 'https://www.google.com/search?q=site%3A+';
+        const site = '';
+  
+        function submitted(event) {
+          event.preventDefault();
+          const url = google + site + '+' + q.value;
+          const win = window.open(url, '_blank');
+          win.focus();
+        }
+  
+        f.addEventListener('submit', submitted);
+      </script>
 </body>
 </html>
