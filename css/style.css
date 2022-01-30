@@ -165,7 +165,7 @@ html{
 }
 .background3{
     width:100%;
-    background:url("../img/rgb.jpg");
+    background:url("../img/rgb.png");
     background-size: cover;
     background-blend-mode: darken;
    
@@ -362,7 +362,13 @@ html{
     display:none;
 }
 @media only screen and (max-width:900px){
-    
+     .background3{
+        width:100%;
+        
+        background:rgba(0,0,0,0.7) url("../img/rgb1.png");
+        
+        background-blend-mode: darken;
+    }
     .middle{
         align-items: center;
         padding: 8px 20px;
