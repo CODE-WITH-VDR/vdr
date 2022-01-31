@@ -165,12 +165,11 @@ html{
 }
 .background3{
     width:100%;
-    background:url("../img/rgb.png");
-    background-size: cover;
+    background: url("../img/vdr.gif");
+    
     background-blend-mode: darken;
    
 }
-
 .box-main{
     display: flex;
     justify-content: center;
@@ -365,7 +364,8 @@ html{
      .background3{
         width:100%;
         
-        background:rgba(0,0,0,0.7) url("../img/rgb1.png");
+        background:url("../img/vdr1.gif");
+        background-size: cover;
         
         background-blend-mode: darken;
     }
