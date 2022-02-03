@@ -345,7 +345,7 @@ html{
 /*----------------------------------------*/
 .line{
     width: 20px;
-    background-color: yellow;
+    background-color: white;
     height: 3px;
     margin: 3px 3px;
     border-radius: 1000px;
@@ -483,7 +483,7 @@ html{
         background: gray;
     }
     .h-navresp{
-        height: 0px;
+        height: 50px;
     }
     /*---------------------------------------*/
     .v-classresp{
