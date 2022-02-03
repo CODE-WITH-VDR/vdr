@@ -130,7 +130,7 @@ html{
     font-family: 'Bebas Neue', cursive;
     font-size: 17px;
     list-style: none;
-    
+    text-decoration: none;
 }
 .nav-list li a:hover{
     color: greenyellow;
@@ -223,6 +223,9 @@ html{
     margin: auto;
     max-width: 80%;
     font-family: 'Bebas Neue', cursive;
+}
+.left{
+    flex-direction:row-reverse;
 }
 .buttons{
     padding: 30px;
