@@ -104,6 +104,17 @@ html{
     border: 6px gray;
     border-radius: 9px;
 }
+.resplogo{
+    display: none;
+    position: absolute;
+    cursor:pointer;
+    left: 8%;
+    top: 6px;
+}
+.resplogo img{
+    width: 50px;
+
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -111,8 +122,6 @@ html{
     position: sticky;
     top:0;
     cursor: pointer;
-    
-
 }
 .nav-list{
      width: 70%;
@@ -480,6 +489,12 @@ html{
     }
     .burger{
         display: block;
+    }
+    .resplogo{
+        display: block;
+    }
+    .logo{
+        display: none;
     }
     /*---------------------------------------*/
     .burger:active{
