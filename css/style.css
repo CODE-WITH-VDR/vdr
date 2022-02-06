@@ -345,6 +345,14 @@ html{
     top: 15px;
     list-style:none;
 }
+.center{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    color: white;
+
+}
 .btn2::after{
     display: none;
     position: absolute;
@@ -551,6 +559,9 @@ html{
     }
     .hr{
         display: block;
+    }
+    .center{
+        display:block;
     }
 
 }
