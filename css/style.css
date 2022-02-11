@@ -394,7 +394,7 @@ html{
         
         background:url("../img/vdr1.gif");
         
-        
+        background-size:cover;
         background-blend-mode: darken;
     }
     .middle{
@@ -435,7 +435,7 @@ html{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 500px;
+        height: 325px;
         transition: all 0.5s ease;
     }
     .rightnav{
