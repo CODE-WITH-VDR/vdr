@@ -388,6 +388,9 @@ html{
     display:none;
 }
 @media only screen and (max-width:900px){
+     .background{
+        height: 50vh;
+    }
      .background3{
         width:100%;
         
@@ -576,6 +579,7 @@ html{
     }
     .box-main{
         flex-direction: column;
+        height:50vh;
     }
 
 }
