@@ -38,7 +38,6 @@ html{
     background: #980bda;
   }
   
-  /* Clear floats */
   form.example::after {
     content: "";
     clear: both;
@@ -52,7 +51,7 @@ html{
     width: 55px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .switch div {
@@ -355,8 +354,8 @@ html{
 .center{
     display: none;
     position: absolute;
-    top: 14px;
-    left: 147px;
+    top: 17px;
+    left: 149px;
     color: white;
 
 }
