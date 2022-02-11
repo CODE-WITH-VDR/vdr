@@ -132,10 +132,9 @@ html{
 }
 .nav-list li{
     list-style: none;
-    padding: 26px 30px;
+    padding: 10px 20px;
 }
 .nav-list li a{
-    background-color: black;
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-size: 17px;
@@ -143,7 +142,7 @@ html{
     text-decoration: none;
 }
 .nav-list li a:hover{
-    color: greenyellow;
+    color: rgb(255, 47, 220);
 }
 .hrs{
     border-top: 1px dashed gray;
