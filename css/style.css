@@ -11,7 +11,6 @@ html{
     box-sizing: border-box;
   }
   
-  /* Style the search field */
   form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
@@ -19,6 +18,7 @@ html{
     float: left;
     width: 80%;
     background: #f1f1f1;
+    border-radius: 41px 5px 2px 43px;
   }
   
   /* Style the submit button */
@@ -30,8 +30,8 @@ html{
     color: white;
     font-size: 17px;
     border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
+    border-left: none; 
+    border-radius: 5px 41px 43px 2px;
   }
   
   form.example button:hover {
