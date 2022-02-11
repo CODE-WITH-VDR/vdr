@@ -69,7 +69,7 @@ html{
   
   .fa-adjust {
     transform: rotate(180deg);
-    opacity: 0;
+    display:none;
   }
   
   .switch input {
