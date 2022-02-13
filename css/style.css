@@ -121,7 +121,6 @@ html{
     justify-content: center;
     position: sticky;
     top:0;
-    cursor: pointer;
 }
 .nav-list{
      width: 70%;
