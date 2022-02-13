@@ -134,12 +134,15 @@ html{
 }
 .nav-list li a{
     color: white;
+    border: 1px solid black;
     font-family: 'Bebas Neue', cursive;
     font-size: 17px;
     list-style: none;
     text-decoration: none;
+    transition: all 0.5s ease-out;
 }
-.nav-list li a:hover{
+.li a:hover,a:focus{
+    background-color: #2c3e50;
     color: rgb(255, 47, 220);
 }
 .hrs{
