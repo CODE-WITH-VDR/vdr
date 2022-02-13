@@ -134,7 +134,8 @@ html{
 }
 .nav-list li a{
     color: white;
-    border: 1px solid black;
+    border: 3px solid none;
+    border-radius:5px;
     font-family: 'Bebas Neue', cursive;
     font-size: 17px;
     list-style: none;
