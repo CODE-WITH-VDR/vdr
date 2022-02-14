@@ -142,7 +142,7 @@ html{
     text-decoration: none;
     transition: all 0.3s ease-out;
 }
-.li a:hover,a:focus{
+.nav-list a:hover,a:focus{
     background-color: greenyellow;
     color: rgb(255, 47, 47);
 }
