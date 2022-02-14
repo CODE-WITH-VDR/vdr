@@ -226,12 +226,13 @@ html{
     border: 2px solid none;
     border-radius: 11px;
     font-size: 16px;
-    background: url("../img/vdrbg.jpg");
+    background-color: gray;
     color: white;
+    cursor: pointer;
 }
 .btn:hover,.btn:focus{
-    color: rgb(0, 255, 242);
-    background:rgba(0, 0,0,0.7) url("../img/vdrbg.jpg");
+    color: greenyellow;
+    background:orange;
 
 }
 .btn:active{
