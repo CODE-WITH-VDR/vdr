@@ -204,34 +204,38 @@ html{
     
 }
 .new{
-    border:6px solid #7c21f3;
-    border-radius: 130px;
+    border: 3px solid gray;
+    border-radius: 8pxpx;
     width: 240px;
-    height: 240px;
+    height: 160px;
 }
 .text-big{
     font-size: 50px;
     font-family: 'Bebas Neue', cursive;
+    text-align: left;
 }
 .text-small{
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
+    text-align: left;
 }
 /*----------------------------------*/
 .btn{
     padding: 8px 20px;
     font-family: 'Bebas Neue', cursive;
-    border: 2px solid #7c21f3;
-    border-radius: 55px;
+    border: 2px solid none;
+    border-radius: 11px;
     font-size: 16px;
+    background: url("../img/vdrbg.jpg");
+    color: white;
+}
+.btn:hover,.btn:focus{
+    color: rgb(0, 255, 242);
+    background:rgba(0, 0,0,0.7) url("../img/vdrbg.jpg");
+
 }
 .btn:active{
     background: red;
-}
-.gsc-control-cse{
-    border-radius: 15px;
-    border: greenyellow;
-    list-style: none;
 }
 .section{
     padding: 30px;
