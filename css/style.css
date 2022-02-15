@@ -219,6 +219,22 @@ html{
     font-family: 'Bebas Neue', cursive;
     text-align: left;
 }
+.btn5{
+    padding: 8px 20px;
+    font-family: 'Bebas Neue', cursive;
+    border: 2px solid none;
+    border-radius: 11px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn5:hover,btn5:focus{
+    color: white;
+    background:blue;
+
+}
+.btn5:active{
+    background: green;
+}
 .btn{
     padding: 8px 20px;
     font-family: 'Bebas Neue', cursive;
@@ -235,7 +251,7 @@ html{
 
 }
 .btn:active{
-    background: red;
+    background: green;
 }
 .section{
     padding: 30px;
