@@ -6,7 +6,6 @@
 html{
     scroll-behavior:smooth;
 }
-/*----------------------------------------------*/
 * {
     box-sizing: border-box;
   }
@@ -43,7 +42,6 @@ html{
     clear: both;
     display: table;
   }
-/*---------------------------------------------*/
 :root {
     --navHeight: 70px;
   }
@@ -327,17 +325,13 @@ html{
     border: 6px solid gray;
     border-radius: 50px; 
     padding: 100px,100px;
-    
-    
 }
 .pythonfiles{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 100px;
     font-family: 'Bebas Neue', cursive;
 }
-/*-----------------------------------*/
 .PYFILES{
     display: flex;
     align-items: center;
@@ -392,7 +386,7 @@ html{
 
 
 }
-/*----------------------------------------*/
+
 .line{
     width: 20px;
     background-color: white;
@@ -400,7 +394,7 @@ html{
     margin: 3px 3px;
     border-radius: 1000px;
 }
-/*---------------------------------*/
+
 .hr{
     display: none;
 }
@@ -470,7 +464,6 @@ html{
         flex-direction: column;
         padding: 0px ;
     }
-    /*------------------------------------*/
     .middle{
         align-items: center;
         padding: 8px 20px;
@@ -507,7 +500,7 @@ html{
     .pythonfiles img{
         flex-direction: column;
     }
-    /*------------------------*/
+
     .pythonfiles img{
         flex-direction: column;
         width: 100px;
@@ -537,14 +530,14 @@ html{
     .logo{
         display: none;
     }
-    /*---------------------------------------*/
+   
     .burger:active{
         background: gray;
     }
     .h-navresp{
         height: 50px;
     }
-    /*---------------------------------------*/
+   
     .v-classresp{
         opacity:0;
         display: none;
@@ -574,31 +567,15 @@ html{
     }
     .btn{
         padding: 8px 20px;
-        /*margin: 7px 3px;*/
         border: 2px solid none;
         border-radius: 11px;
         font-size: 6px;
-        
-    }
-    
-    .buttons1{
-        flex-direction: column;
-        align-items: center;
-        padding: 8px 20px;
-        /*margin: 7px 3px;*/
-        border: 2px solid purple;
-        border-radius: 16px;
-        font-size: 6px;
-        background: none;
-        color: white;
-
     }
     .hr{
         display: block;
     }
     .new{
         display: none;
-        
     }
     .box-main{
         flex-direction: column;
