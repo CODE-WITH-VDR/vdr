@@ -241,7 +241,7 @@ html{
     border: 2px solid none;
     border-radius: 11px;
     font-size: 16px;
-    background-color: #87ceeb;
+    background: none;
     color: white;
     cursor: pointer;
 }
