@@ -572,6 +572,12 @@ html{
         border: 2px solid none;
         font-size: 6px;
     }
+    .btn:hover,btn:focus{
+    color: white;
+    background:blue;
+    font-size:15px;
+    }
+    
     .hr{
         display: block;
     }
