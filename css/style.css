@@ -143,6 +143,7 @@ html{
 .nav-list a:hover,a:focus{
     background-color: greenyellow;
     color: rgb(255, 47, 47);
+    font-size:20px;
 }
 .hrs{
     border-top: 1px dashed gray;
@@ -228,6 +229,7 @@ html{
 .btn5:hover,btn5:focus{
     color: greenyellow;
     background:blue;
+    font-size:20px;
 
 }
 .btn5:active{
@@ -246,7 +248,7 @@ html{
 .btn:hover,btn:focus{
     color: white;
     background:blue;
-
+    font-size:20px;
 }
 .btn:active{
     background: green;
