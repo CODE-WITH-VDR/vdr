@@ -575,7 +575,7 @@ html{
     .btn:hover,btn:focus{
     color: white;
     background:blue;
-    font-size:15px;
+    font-size:8px;
     }
     
     .hr{
