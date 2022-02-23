@@ -370,6 +370,9 @@ html{
     top: 15px;
     list-style:none;
 }
+.burger{
+    background-color: yellowgreen;
+}
 .center{
     display: none;
     position: absolute;
@@ -531,10 +534,6 @@ html{
     }
     .logo{
         display: none;
-    }
-   
-    .burger:active{
-        background: gray;
     }
     .h-navresp{
         height: 50px;
