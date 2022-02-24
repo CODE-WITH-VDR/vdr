@@ -591,5 +591,9 @@ html{
         flex-direction: column;
         height:50vh;
     }
+    .resplogo img{
+        display: block;
+    }
+
 
 }
