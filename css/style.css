@@ -141,7 +141,6 @@ input[type=text], select {
 .logo img{
     width: 60px;
     border: 6px gray;
-    border-radius: 9px;
 }
 .resplogo{
     display: none;
