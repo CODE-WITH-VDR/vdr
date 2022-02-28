@@ -58,7 +58,7 @@
         </ul>
         <div class="rightNav v-classresp">
             <form class="example" id="example">
-                <input type="text" id="query" placeholder="Search.." name="search" aria-label="Search through site content">
+                <input type="text1" id="query" placeholder="Search.." name="search" aria-label="Search through site content">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
@@ -192,19 +192,27 @@
     <!------------------------------------------>
     <section class="contact background2" id="contact">
         <h1 class="text-center">Contact me</h1>
-        <div class="form">
+     <div class="any">
             <form id="google-sheet">
-                <input type="text" name="Name" id="name" placeholder="Enter your name" required>
-                <br>
-                <input type="text" name="PhoneNo" id="phno" placeholder="Enter your phone" required>
-                <br>
-                <input type="email" name="Email" id="email" placeholder="Enter your Email" required>
-                <br>
-                <input type="text" name="Suggeation" id="Suggeation" placeholder="Enter your Suggeation" required>
-                <br>
-                <input type="submit" value="Submit" class="submit">
+              <label for="fname">Name</label>
+              <input type="text"  name="Name" id="name" class="form-text"  placeholder="Your name.." required>
+          
+              <label for="phno">Phone No</label>
+              <input type="text" name="PhoneNo" id="phno" class="form-text" placeholder="Your Phone No.." required>
+
+              <label for="email">E-Mail</label>
+              <input type="email" name="Email" id="email" class="form-text" placeholder="Your E-Mail.." required>
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            
+              <input type="submit" value="Submit" class="submit">
             </form>
-        </div>
+          </div>
     </section>
     <hr>
      <footer>
