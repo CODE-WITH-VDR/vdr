@@ -613,7 +613,6 @@ input[type=text], select {
     }
     .btn:hover,btn:focus{
     color: white;
-    background:blue;
     font-size:8px;
     }
     
