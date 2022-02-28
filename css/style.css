@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *{
     margin: 0;
     padding:0;
@@ -9,8 +10,48 @@ html{
 * {
     box-sizing: border-box;
   }
+ /*---------------------------------*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
   
-  form.example input[type=text] {
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .any{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+/*---------------------------------*/ 
+  form.example input[type=text1] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -20,7 +61,7 @@ html{
     border-radius: 41px 5px 2px 43px;
   }
   
-  /* Style the submit button */
+
   form.example button {
     float: left;
     width: 20%;
@@ -98,7 +139,7 @@ html{
     align-items: center;
 }
 .logo img{
-    width: 25%;
+    width: 60px;
     border: 6px gray;
     border-radius: 9px;
 }
@@ -123,6 +164,7 @@ html{
     justify-content: center;
     position: sticky;
     top:0;
+    height: 60px;
 }
 .nav-list{
      width: 70%;
@@ -145,9 +187,8 @@ html{
     transition: all 0.3s ease-out;
 }
 .nav-list a:hover,a:focus{
-    background-color: greenyellow;
-    color: rgb(255, 47, 47);
-    font-size:20px;
+    color: greenyellow;
+    font-size:15px;
 }
 .hrs{
     border-top: 1px dashed gray;
@@ -173,17 +214,15 @@ html{
 }
 .background{
     width:100%;
-    background: rgba(0, 0,0,0.7) url("../img/vdrbg.jpg");
-    height: 100vh;
+    background: rgba(0, 0,0,0.7) url("../img/background25.png");
     background-size: cover;
     background-blend-mode: darken;
+    height: 60vh;
 }
 .background3{
     width:100%;
-    background: url("../img/vdr.gif");
-    
+    background: black;
     background-blend-mode: darken;
-   
 }
 .box-main{
     display: flex;
@@ -193,7 +232,7 @@ html{
     font-family: 'Bebas Neue', cursive;
     max-width: 50%;
     margin: auto;
-    height: 100vh;
+    height: 60vh;
 
 }
 .firstHalf{
@@ -211,16 +250,19 @@ html{
     border-radius: 8pxpx;
     width: 240px;
     height: 160px;
+    display:none;
 }
 .text-big{
     font-size: 50px;
     font-family: 'Bebas Neue', cursive;
     text-align: left;
+    line-height: 1.2;
 }
 .text-small{
     font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    line-height: 1.2;
 }
 .btn5{
     padding: 8px 20px;
@@ -251,8 +293,7 @@ html{
 }
 .btn:hover,btn:focus{
     color: white;
-    background:blue;
-    font-size:20px;
+    font-size:15px;
 }
 .btn:active{
     background: green;
@@ -416,9 +457,7 @@ html{
     }
      .background3{
         width:100%;
-        
-        background:url("../img/vdr1.gif");
-        
+        background: black;
         background-size:cover;
         background-blend-mode: darken;
     }
