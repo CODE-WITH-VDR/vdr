@@ -447,7 +447,25 @@ input[type=text], select {
 .middle{
     display:none;
 }
-@media only screen and (max-width:900px){
+@media  screen and (max-width:900px) {
+    .text-big{
+        font-size: 30px;
+    }
+    .text-small{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .btn:hover,.btn:focus{
+        font-size: 12px;
+    }
+    .background{
+        height: 65vh;
+    }
+    
+}
+@media only screen and (max-width:700px){
     .background{
         width:100%;
         background: rgba(0, 0,0,0.7) url("../img/background25.png");
