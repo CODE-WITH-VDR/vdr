@@ -183,7 +183,7 @@ input[type=text], select {
     transition: all 0.3s ease-out;
 }
 .nav-list a:hover,a:focus{
-    color: greenyellow;
+    color: gray;
     font-size:15px;
 }
 .hrs{
