@@ -10,7 +10,6 @@ html{
 * {
     box-sizing: border-box;
   }
- /*---------------------------------*/
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -47,11 +46,8 @@ input[type=text], select {
   
   .any{
     border-radius: 5px;
-    background-color: #f2f2f2;
-    color:black;
     padding: 20px;
   }
-/*---------------------------------*/ 
   form.example input[type=text1] {
     padding: 10px;
     font-size: 17px;
