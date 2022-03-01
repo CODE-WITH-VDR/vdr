@@ -448,7 +448,11 @@ input[type=text], select {
     display:none;
 }
 @media only screen and (max-width:900px){
-     .background{
+    .background{
+        width:100%;
+        background: rgba(0, 0,0,0.7) url("../img/background25.png");
+        background-position-x: center;
+        background-blend-mode: darken;
         height: 50vh;
     }
      .background3{
