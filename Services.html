@@ -13,10 +13,29 @@
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        #btnScrollToTop{
+        #btnScrollToTop1{
             position:absolute;
             left: 2px;
             border-radius: 5%;
+            background: white;
+            box-shadow: 0 0 10px rgb(0, 0, 0,0.25);
+            color: black;
+            outline: none;
+            cursor: pointer;
+            border: none;
+        }
+        #btnScrollToTop1:active{
+            background:gray;
+        }
+    </style>
+    <style>
+        #btnScrollToTop{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
             background: white;
             box-shadow: 0 0 10px rgb(0, 0, 0,0.25);
             color: black;
@@ -188,7 +207,7 @@
     </section>
     <hr class="hrs">
 
-    <a href="index.html"><button id="btnScrollToTop"> <i class="material-icons">arrow_left</i> </button></a> 
+    <a href="index.html"><button id="btnScrollToTop1"> <i class="material-icons">arrow_left</i> </button></a> 
     <pre><p class="main text-small">          <<-------CLICK HERE TO GO BACK MAINPAGE</p></pre><br><hr class="hrs">
     <marquee>
     <p class="text-big">CREDITS:-V DURGESHWAR RAO</p>
