@@ -93,7 +93,8 @@ input[type=text], select {
   .switch div {
     position: relative;
     display: block;
-    background: white;
+    background: 
+    background: chartreuse;
     width: 30px;
     border-radius: 50px;
     padding: 0 5px;
