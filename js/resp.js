@@ -65,12 +65,12 @@ document.addEventListener('keydown', function() {
 
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Sorry Dude!! You Can't Access Code..Contact Me For Source Code");
     e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Sorry Dude!! You Can't Access Code..Contact Me For Source Code");
     window.event.returnValue = false;
   });
 }
