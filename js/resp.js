@@ -65,12 +65,9 @@ document.addEventListener('keydown', function() {
 
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
-    alert("Sorry Dude!! You Can't Access Code..Contact Me For Source Code");
-    e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-    alert("Sorry Dude!! You Can't Access Code..Contact Me For Source Code");
     window.event.returnValue = false;
   });
 }
