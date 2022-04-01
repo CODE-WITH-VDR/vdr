@@ -52,25 +52,25 @@ f.addEventListener('submit', submitted);
 //DISABLE CONTEXT MENU
 document.addEventListener('keydown', function() {
   if (event.keyCode == 123) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
     return false;
   } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
     return false;
   } else if (event.ctrlKey && event.keyCode == 85) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
     return false;
   }
 }, false);
 
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
-
+    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
     e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-
+    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
     window.event.returnValue = false;
   });
 }
