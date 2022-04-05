@@ -150,6 +150,9 @@ form.example input[type="text1"]:focus {
 form.example input:hover {
   border-bottom: 2px solid greenyellow;
 }
+form.example input:active{
+  border-bottom: 2px solid greenyellow;
+}
 form.example button {
   float: left;
   width: 20%;
