@@ -138,6 +138,9 @@ input[type="submit"]:hover {
 form.example input[type="text1"] {
   padding: 10px;
   font-size: 17px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
   border-bottom: 2px solid grey;
   float: left;
   width: 80%;
