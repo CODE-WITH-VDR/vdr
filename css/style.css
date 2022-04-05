@@ -163,7 +163,7 @@ form.example button {
   background: none;
   color: white;
   font-size: 17px;
-  border: 0px solid grey;
+  border: 2px solid grey;
   border-left: none;
   border-radius: 2px;
 }
