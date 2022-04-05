@@ -26,10 +26,10 @@ const btnScrollToTop=document.querySelector("#btnScrollToTop");
 btnScrollToTop.addEventListener("click",function(){
     window.scrollTo(0,0);
 })
-
 const themeSwitch = document.querySelector('input');
 themeSwitch.addEventListener('change', () => {
 document.body.classList.toggle('dark-theme');
+alert("Switching Mode!!!!  Click On 'OK' To Proceed")
 });
 
 const f = document.getElementById('example');
@@ -50,7 +50,7 @@ f.addEventListener('submit', submitted);
 
 
 //DISABLE CONTEXT MENU
-document.addEventListener('keydown', function() {
+/*document.addEventListener('keydown', function() {
   if (event.keyCode == 123) {
     alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
     return false;
@@ -73,4 +73,4 @@ if (document.addEventListener) {
     alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
     window.event.returnValue = false;
   });
-}
+}*/
