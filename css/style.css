@@ -163,8 +163,10 @@ form.example button {
   background: none;
   color: white;
   font-size: 17px;
-  border: 2px solid grey;
+  border-bottom: 2px solid grey;
   border-left: none;
+  border-right: none;
+  border-top: none;
   border-radius: 2px;
 }
 
