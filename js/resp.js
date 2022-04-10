@@ -12,7 +12,7 @@ burger.addEventListener('click',()=>{
 
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwyQDZNJx4rirna1Xv_oHnjAD2gFKnAHZOXGe7X9YqudzgLCMJYAomjne1pP6UjLkVyLA/exec'
-//https://script.google.com/macros/s/AKfycbylTAlBH5-epM9sWk1cPv-ujH_JLJRQ0MyAWGZ85LU0/dev
+
 const form = document.forms['google-sheet']
 
 form.addEventListener('submit', e => {
@@ -29,7 +29,7 @@ btnScrollToTop.addEventListener("click",function(){
 const themeSwitch = document.querySelector('input');
 themeSwitch.addEventListener('change', () => {
 document.body.classList.toggle('dark-theme');
-alert("Switching Mode!!!!  Click On 'OK' To Proceed")
+alert("Switching Color Theme!!!!")
 });
 
 const f = document.getElementById('example');
