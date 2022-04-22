@@ -188,7 +188,7 @@ form.example button {
 
 form.example button:hover {
   color: gray;
-  border-bottom: 2px solid greenyellow;
+  /*border-bottom: 2px solid greenyellow;*/
 }
 
 form.example::after {
