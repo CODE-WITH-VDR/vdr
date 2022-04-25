@@ -29,7 +29,7 @@ btnScrollToTop.addEventListener("click",function(){
 const themeSwitch = document.querySelector('input');
 themeSwitch.addEventListener('change', () => {
 document.body.classList.toggle('dark-theme');
-alert("Switching Color Theme!!!!")
+//alert("Switching Color Theme!!!!")
 });
 
 const f = document.getElementById('example');
