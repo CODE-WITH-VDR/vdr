@@ -647,9 +647,11 @@ btn:focus {
   }
   .section {
     flex-direction: column;
+    padding: 0px;
   }
   .sectionleft {
     flex-direction: column;
+    padding: 0px;
   }
   .copy {
     flex-direction: column;
