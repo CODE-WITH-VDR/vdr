@@ -560,7 +560,7 @@ btn:focus {
     font-size: 30px;
   }
   .text-small {
-    font-size: 15px;
+    font-size: 16px;
   }
   .btn {
     font-size: 14px;
@@ -722,10 +722,10 @@ btn:focus {
     height: 10vh;
   }
   .text-big {
-    font-size: 16px;
+    font-size: 18px;
   }
   .text-small {
-    font-size: 7px;
+    font-size: 14px;
   }
   .btn {
     padding: 8px 20px;
