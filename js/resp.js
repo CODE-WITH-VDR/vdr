@@ -12,7 +12,6 @@ burger.addEventListener('click',()=>{
 
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwyQDZNJx4rirna1Xv_oHnjAD2gFKnAHZOXGe7X9YqudzgLCMJYAomjne1pP6UjLkVyLA/exec'
-
 const form = document.forms['google-sheet']
 
 form.addEventListener('submit', e => {
@@ -26,10 +25,15 @@ const btnScrollToTop=document.querySelector("#btnScrollToTop");
 btnScrollToTop.addEventListener("click",function(){
     window.scrollTo(0,0);
 })
-const themeSwitch = document.querySelector('input');
-themeSwitch.addEventListener('change', () => {
-document.body.classList.toggle('dark-theme');
-//alert("Switching Color Theme!!!!")
+
+$(".change").on("click", function () {
+  if ($("body").hasClass("dark")) {
+      $("body").removeClass("dark");
+      $(".change").text("OFF");
+  } else {
+      $("body").addClass("dark");
+      $(".change").text("ON");
+  }
 });
 
 const f = document.getElementById('example');
@@ -47,30 +51,3 @@ function submitted(event) {
 f.addEventListener('submit', submitted);
 
 
-
-
-//DISABLE CONTEXT MENU
-/*document.addEventListener('keydown', function() {
-  if (event.keyCode == 123) {
-    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
-    return false;
-  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
-    return false;
-  } else if (event.ctrlKey && event.keyCode == 85) {
-    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
-    return false;
-  }
-}, false);
-
-if (document.addEventListener) {
-  document.addEventListener('contextmenu', function(e) {
-    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
-    e.preventDefault();
-  }, false);
-} else {
-  document.attachEvent('oncontextmenu', function() {
-    alert("Sorry Dude..Context Menu is disabled due some issue..If you want to get Source Code then Contact Me..Thanks For Visiting My Website..");
-    window.event.returnValue = false;
-  });
-}*/
