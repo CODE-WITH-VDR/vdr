@@ -113,7 +113,10 @@ hover:active {
     padding: 5px 0px;
   }
 }
-
+/*AUDIO*/
+.none{
+  display: none;
+}
 /*------------------------------*/
 html {
   scroll-behavior: smooth;
