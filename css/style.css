@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
 }
-
 /*BUTTON TO MAIN PAGE*/
 #btnScrollToTop1 {
   position: absolute;
@@ -159,7 +158,10 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: rgb(224, 28, 28);
+}
+input[type="submit"]:active {
+  background-color: #07eb12;
 }
 
 /*------------------------*/
@@ -182,7 +184,6 @@ form.example input[type="text1"] {
   float: left;
   width: 80%;
   background: none;
-  border-radius: 2px;
 }
 
 form.example input[type="text1"]:focus {
@@ -191,10 +192,6 @@ form.example input[type="text1"]:focus {
 
 form.example input:hover {
   border-bottom: 2px solid white;
-}
-
-form.example input:active {
-  border-bottom: 2px solid greenyellow;
 }
 
 form.example button {
@@ -223,58 +220,49 @@ form.example::after {
 
 /*-------------------------*/
 /*SWITCH TO DARK MODE*/
-:root {
-  --navHeight: 70px;
-}
 
-.switch {
-  width: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.switch div {
-  position: relative;
+body {
   display: block;
-  background: red;
-  width: 30px;
-  border-radius: 50px;
-  padding: 0 5px;
-  box-sizing: border-box;
+}
+.mode {
+  float: right;
+  color: white;
+}
+.dark-mode {
+  font-family: "Bebas Neue", cursive;
+}
+.change {
+  font-family: "Bebas Neue", cursive;
   cursor: pointer;
-  color: white;
+  border: 1px solid #555;
+  border-radius: 40%;
+  width: 20px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px;
 }
-
-.fa-adjust {
-  transform: rotate(180deg);
-  display: none;
-}
-
-.switch input {
-  display: none;
-}
-
-.slider {
-  background-color: #999;
-  transition: 0.4s;
-  border-radius: 34px;
-  height: 12px;
-  width: 12px;
-  display: inline-block;
-  position: relative;
-}
-
-input:checked+.slider {
-  transform: translateX(8px);
-}
-
-/*----------------------------*/
-.dark-theme {
+.dark {
   background-color: black;
-  color: white;
+  color: #e6e6e6;
+}
+/*----------------------------*/
+/*BUTTON FOR LEFT ARROW*/
+#btnScrollToTop1 {
+  position: absolute;
+  left: 2px;
+  border-radius: 5%;
+  background: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
+  color: black;
+  outline: none;
+  cursor: pointer;
+  border: none;
 }
 
+#btnScrollToTop1:active {
+  background: gray;
+}
+/*-------------------------*/
 .logo {
   display: flex;
   justify-content: center;
@@ -698,7 +686,7 @@ btn:focus {
     line-height: 30px;
   }
 
-  #check:checked~.ul {
+  #check:checked ~ .ul {
     left: 0;
   }
 
@@ -863,6 +851,20 @@ btn:focus {
   .box-main {
     flex-direction: column;
     height: 50vh;
+  }
+  .dark-mode {
+    display: none;
+  }
+  .change {
+    font-family: "Bebas Neue", cursive;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 40%;
+    width: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 0px;
+    justify-content: center;
   }
 
   .resplogo img {
