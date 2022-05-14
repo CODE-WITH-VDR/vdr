@@ -114,7 +114,7 @@ hover:active {
   }
 }
 /*AUDIO*/
-.none{
+.none {
   display: none;
 }
 /*------------------------------*/
@@ -404,7 +404,9 @@ body {
   text-align: justify;
   line-height: 1.2;
 }
-
+.cursor-copy {
+  cursor: copy;
+}
 .btn5 {
   padding: 8px 20px;
   font-family: "Bebas Neue", cursive;
@@ -489,6 +491,14 @@ btn:focus {
   border-radius: 25px;
   margin-top: 19px;
 }
+.thumbnail1 img {
+  border: 5px solid grey;
+  border-radius: 25px;
+  margin-top: 19px;
+  height: 400px;
+  width: 300px;
+  margin-left: 500px;
+}
 
 .text-center {
   text-align: left;
@@ -526,7 +536,16 @@ btn:focus {
   color: black;
   border: 2px solid black;
 }
-
+/*LINKS FOR PYTHON FILES*/
+.secpy {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 80%;
+  color: black;
+}
 .pythonfiles img {
   display: flex;
   align-items: center;
@@ -553,7 +572,50 @@ btn:focus {
   padding: 0px 100px;
   font-family: "Bebas Neue", cursive;
 }
+.PYFILES1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 100px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+.box {
+  padding: 30px;
+  margin: auto;
+  background: rgb(204, 204, 204);
+  background-clip: padding-box;
+  border-radius: 20px;
+}
+.box:hover {
+  background: grey;
+}
 
+/*----------------------------------------------*/
+/*BOOKS BACKGROUND BOX*/
+.box-book {
+  padding: 30px;
+  margin: auto;
+  background: rgb(204, 204, 204);
+  background-clip: padding-box;
+  color: black;
+  border-radius: 20px;
+}
+.box-book:hover {
+  background: orange;
+}
+.box-book2 {
+  padding: 30px;
+  margin: auto;
+  background: rgb(204, 204, 204);
+  background-clip: padding-box;
+  color: black;
+  border-radius: 20px;
+}
+.box-book2:hover {
+  background: pink;
+}
+/*----------------------------------*/
 .copy {
   display: flex;
   align-items: center;
@@ -707,7 +769,7 @@ btn:focus {
     align-items: center;
     justify-content: center;
     height: 360px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
   }
 
   .rightnav {
@@ -846,7 +908,14 @@ btn:focus {
   .hr {
     display: block;
   }
-
+  .thumbnail1 img {
+    border: 5px solid grey;
+    border-radius: 25px;
+    margin-top: 19px;
+    height: 250px;
+    width: 200px;
+    margin-left: 45px;
+  }
   .new {
     display: none;
   }
