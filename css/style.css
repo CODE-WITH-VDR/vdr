@@ -742,7 +742,7 @@ btn:focus {
     top: 50px;
     left: -100%;
     text-align: center;
-    transition: all 0.5s ;
+    transition: all 0.3s ;
   }
 
   .nav ul li {
@@ -769,7 +769,7 @@ btn:focus {
     align-items: center;
     justify-content: center;
     height: 360px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
 
   .rightnav {
