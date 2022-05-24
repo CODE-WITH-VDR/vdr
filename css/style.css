@@ -563,14 +563,16 @@ btn:focus {
   align-items: center;
   justify-content: center;
   font-family: "Bebas Neue", cursive;
+  padding: 17px 43px 34px 25px;
 }
 
 .PYFILES {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 100px;
-  font-family: "Bebas Neue", cursive;
+  padding: 0px 30px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: justify;
 }
 .PYFILES1 {
   display: flex;
@@ -581,7 +583,7 @@ btn:focus {
   font-size: 20px;
 }
 .box {
-  padding: 30px;
+  padding: 0px 250px;
   margin: auto;
   background: rgb(204, 204, 204);
   background-clip: padding-box;
@@ -742,7 +744,7 @@ btn:focus {
     top: 50px;
     left: -100%;
     text-align: center;
-    transition: all 0.3s ;
+    transition: all 0.5s;
   }
 
   .nav ul li {
@@ -769,7 +771,7 @@ btn:focus {
     align-items: center;
     justify-content: center;
     height: 360px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
 
   .rightnav {
@@ -941,5 +943,25 @@ btn:focus {
 
   .resplogo img {
     display: block;
+  }
+  .PYFILES {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    font-family: "Ubuntu", sans-serif;
+    text-align: justify;
+  }
+  .PYFILES1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    padding: 30px 60px;
+    background-color: red;
+    max-width: 30%;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    padding: 0px 70px;
   }
 }
