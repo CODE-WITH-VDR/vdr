@@ -585,7 +585,7 @@ btn:focus {
 .box {
   padding: 0px 250px;
   margin: auto;
-  background: rgb(204, 204, 204);
+  background: none;
   background-clip: padding-box;
   border-radius: 20px;
 }
@@ -598,7 +598,7 @@ btn:focus {
 .box-book {
   padding: 30px;
   margin: auto;
-  background: rgb(204, 204, 204);
+  background: none;
   background-clip: padding-box;
   color: black;
   border-radius: 20px;
@@ -609,7 +609,7 @@ btn:focus {
 .box-book2 {
   padding: 30px;
   margin: auto;
-  background: rgb(204, 204, 204);
+  background: none;
   background-clip: padding-box;
   color: black;
   border-radius: 20px;
