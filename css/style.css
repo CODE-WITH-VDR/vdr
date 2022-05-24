@@ -26,12 +26,12 @@
 /*HOVERING EFFECTS*/
 .hover {
   text-decoration: none;
-  color: grey;
+  color: red;
 }
 
 .hover:hover,
 hover:active {
-  color: red;
+  color: greenyellow;
   text-decoration: none;
   border: 0px solid black;
   border-bottom: greenyellow;
@@ -49,7 +49,6 @@ hover:active {
   border-radius: 50%;
   background: white;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
-  color: black;
   outline: none;
   cursor: pointer;
   border: none;
@@ -497,7 +496,7 @@ btn:focus {
   margin-top: 19px;
   height: 400px;
   width: 300px;
-  margin-left: 500px;
+  margin-left: 230px;
 }
 
 .text-center {
@@ -557,7 +556,9 @@ btn:focus {
   border-radius: 50px;
   padding: 100px, 100px;
 }
-
+.pythonfiles img:hover {
+  border: 6px solid greenyellow;
+}
 .pythonfiles {
   display: flex;
   align-items: center;
@@ -574,6 +575,9 @@ btn:focus {
   font-family: "Ubuntu", sans-serif;
   text-align: justify;
 }
+.PYFILES:hover {
+  color: red;
+}
 .PYFILES1 {
   display: flex;
   align-items: center;
@@ -585,12 +589,12 @@ btn:focus {
 .box {
   padding: 0px 250px;
   margin: auto;
-  background: none;
+  background: #d3d3d3;
   background-clip: padding-box;
   border-radius: 20px;
 }
 .box:hover {
-  background: grey;
+  background: #c0c0c0;
 }
 
 /*----------------------------------------------*/
@@ -598,24 +602,24 @@ btn:focus {
 .box-book {
   padding: 30px;
   margin: auto;
-  background: none;
+  background: #d3d3d3;
   background-clip: padding-box;
   color: black;
   border-radius: 20px;
 }
 .box-book:hover {
-  background: orange;
+  background: #e5e4e2;
 }
 .box-book2 {
   padding: 30px;
   margin: auto;
-  background: none;
+  background: #d3d3d3;
   background-clip: padding-box;
   color: black;
   border-radius: 20px;
 }
 .box-book2:hover {
-  background: pink;
+  background: F88379;
 }
 /*----------------------------------*/
 .copy {
@@ -640,7 +644,113 @@ btn:focus {
 .middle:active {
   background: red;
 }
+/*RGB EFFECT*/
+.bg {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+}
+.disco {
+  color: black;
 
+  width: 420px;
+  height: 250px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 9em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+
+  -webkit-transform: rotateX(25deg) rotateY(20deg) rotateZ(-3deg);
+  transform: rotateX(25deg) rotateY(20deg) rotateZ(-3deg);
+
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  margin-left: -180px;
+
+  -webkit-animation: anim 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  animation: anim 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    text-shadow: -6px 4px 0px red;
+  }
+  10% {
+    text-shadow: 4px -6px 0px green;
+  }
+  20% {
+    text-shadow: -9px 4px 0px blue;
+  }
+  30% {
+    text-shadow: 4px -6px 0px yellow;
+  }
+  40% {
+    text-shadow: -8px 4px 0px orange;
+  }
+  50% {
+    text-shadow: 4px 5px 0px purple;
+  }
+  60% {
+    text-shadow: -6px 4px 0px brown;
+  }
+  70% {
+    text-shadow: 4px 7px 0px pink;
+  }
+  80% {
+    text-shadow: -9px -4px 0px lime;
+  }
+  90% {
+    text-shadow: 4px -6px 0px cyan;
+  }
+  100% {
+    text-shadow: -9px 4px 0px teal;
+  }
+}
+
+@keyframes anim {
+  0% {
+    text-shadow: -6px 4px 0px red;
+  }
+  10% {
+    text-shadow: 4px -6px 0px green;
+  }
+  20% {
+    text-shadow: -9px 4px 0px blue;
+  }
+  30% {
+    text-shadow: 4px -6px 0px yellow;
+  }
+  40% {
+    text-shadow: -8px 4px 0px orange;
+  }
+  50% {
+    text-shadow: 4px 5px 0px purple;
+  }
+  60% {
+    text-shadow: -6px 4px 0px brown;
+  }
+  70% {
+    text-shadow: 4px 7px 0px pink;
+  }
+  80% {
+    text-shadow: -9px -4px 0px lime;
+  }
+  90% {
+    text-shadow: 4px -6px 0px cyan;
+  }
+  100% {
+    text-shadow: -9px 4px 0px teal;
+  }
+}
+
+/*----------------------------------*/
 .burger {
   display: none;
   position: absolute;
@@ -963,5 +1073,8 @@ btn:focus {
   }
   .box {
     padding: 0px 70px;
+  }
+  .disco {
+    font-size: 7em;
   }
 }
