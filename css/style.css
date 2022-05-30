@@ -747,7 +747,7 @@ btn:focus {
   }
 }
 
-/*----------------------------------*/
+/*HAMBURGER*/
 .burger {
   display: none;
   position: absolute;
@@ -756,6 +756,21 @@ btn:focus {
   top: 15px;
   list-style: none;
 }
+.burger:active{
+  transform: rotate(-90deg);
+  transition: all 0.1s;
+}
+.line{
+  width: 20px;
+  background-color: white;
+  height: 3px;
+  margin: 3px 3px;
+  border-radius: 1000px;
+}
+.line:active{
+  background-color: red;
+}
+/*---------------------------------------*/
 
 .center {
   display: none;
@@ -774,13 +789,6 @@ btn:focus {
   list-style: none;
 }
 
-.line {
-  width: 20px;
-  background-color: white;
-  height: 3px;
-  margin: 3px 3px;
-  border-radius: 1000px;
-}
 
 .hr {
   display: none;
