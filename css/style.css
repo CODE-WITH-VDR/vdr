@@ -31,7 +31,7 @@
 
 .hover:hover,
 hover:active {
-  color: greenyellow;
+  color: #b60d0d;
   text-decoration: none;
   border: 0px solid black;
   border-bottom: greenyellow;
