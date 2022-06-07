@@ -338,6 +338,10 @@ body {
   background: #111;
 }
 /*-------------------------*/
+::selection {
+  color: white;
+  background: red;
+}
 .logo {
   display: flex;
   justify-content: center;
