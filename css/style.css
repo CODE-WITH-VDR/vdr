@@ -339,8 +339,8 @@ body {
 }
 /*-------------------------*/
 ::selection {
-  color: white;
-  background: red;
+  color: red;
+  background: white;
 }
 .logo {
   display: flex;
