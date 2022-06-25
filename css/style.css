@@ -340,6 +340,7 @@ body {
 /*-------------------------*/
 ::selection {
   background: red;
+  color: white;
 }
 .logo {
   display: flex;
