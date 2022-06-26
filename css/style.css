@@ -339,8 +339,8 @@ body {
 }
 /*-------------------------*/
 ::selection {
-  background: red;
   color: white;
+  background: red;
 }
 .logo {
   display: flex;
@@ -428,7 +428,7 @@ body {
 
 .background {
   width: 100%;
-  background: rgba(0, 0, 0, 0.7) url("../img/background25.png");
+  background:  url("../img/comp-unsplash.jpg");
   background-size: cover;
   background-blend-mode: darken;
   height: 60vh;
@@ -900,7 +900,7 @@ btn:focus {
   }
 }
 /*--------------------------------*/
-.imgFluid{
+.imgFluid {
   height: 250px;
   width: 300px;
 }
@@ -929,7 +929,7 @@ btn:focus {
     padding: 0px 12px;
     font-family: "Bebas Neue", cursive;
   }
-  .imgFluid{
+  .imgFluid {
     height: 300px;
     width: 300px;
   }
@@ -966,7 +966,7 @@ btn:focus {
     padding: 0px 12px;
     font-family: "Bebas Neue", cursive;
   }
-  .imgFluid{
+  .imgFluid {
     height: 200px;
     width: 200px;
   }
@@ -1003,7 +1003,7 @@ btn:focus {
     padding: 0px 12px;
     font-family: "Bebas Neue", cursive;
   }
-  .imgFluid{
+  .imgFluid {
     height: 200px;
     width: 200px;
   }
@@ -1036,17 +1036,17 @@ btn:focus {
     list-style: none;
     padding: 0px 6px;
   }
-  .nav-list li a{
+  .nav-list li a {
     font-size: 15px;
   }
-  .dark-mode{
+  .dark-mode {
     font-size: 15px;
   }
   .paras {
     padding: 0px 10px;
     font-family: "Bebas Neue", cursive;
   }
-  .imgFluid{
+  .imgFluid {
     height: 150px;
     width: 150px;
   }
@@ -1058,8 +1058,8 @@ btn:focus {
 @media only screen and (max-width: 620px) {
   .background {
     width: 100%;
-    background: rgba(0, 0, 0, 0.7) url("../img/background25.png");
-    background-position-x: center;
+    background: rgba(0, 0, 0, 0.7) url("../img/comp-unsplash-resp.jpg");
+    /*background-position-x: center;*/
     background-blend-mode: darken;
     height: 50vh;
   }
@@ -1317,7 +1317,7 @@ btn:focus {
   .footer-social-links a {
     margin: 0 12px;
   }
-  .imgFluid{
+  .imgFluid {
     height: 100px;
     width: 150px;
   }
@@ -1328,12 +1328,10 @@ btn:focus {
   .nav-list li a {
     font-size: 20px;
   }
-
 }
 /*--------------------------------*/
 @media screen and (max-width: 300px) {
-  body{
-    content : "Sorry Screen Size Not Supported !!!";
+  body {
+    content: "Sorry Screen Size Not Supported !!!";
   }
-  
 }
