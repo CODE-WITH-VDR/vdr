@@ -726,7 +726,7 @@ btn:focus {
   width: 420px;
   height: 250px;
   font-family: "Ubuntu", sans-serif;
-  font-size: 9em;
+  font-size: 6em;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -1306,7 +1306,7 @@ btn:focus {
     padding: 0px 70px;
   }
   .disco {
-    font-size: 7em;
+    font-size: 4em;
     width: 350px;
     height: 250px;
   }
