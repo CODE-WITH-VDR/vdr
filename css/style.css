@@ -132,7 +132,7 @@ select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -143,7 +143,7 @@ select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -268,15 +268,11 @@ body {
 /*SOCIAL MEDIA LINKS AND ICONS*/
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
-.bgd {
-  background: rgba(238, 238, 238, 0.877);
-  color: black;
-}
 
 .footer-social-links {
   font-size: 14px;
   text-align: center;
-  background: rgba(238, 238, 238, 0.877);
+  /*background: rgba(238, 238, 238, 0.877);*/
 }
 
 .footer-social-links a {
@@ -287,7 +283,7 @@ body {
   margin: 0 100px;
   text-align: center;
   display: inline-block;
-  color: #111;
+  /*color: #111;*/
 
   -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
   -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
@@ -311,7 +307,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid #111;
+  border: 1px solid;
 
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -331,11 +327,11 @@ body {
 }
 
 .footer-social-links a:hover {
-  color: #fff;
+  color: red;
 }
 
 .footer-social-links a:hover:before {
-  background: #111;
+  background: gray;
 }
 /*-------------------------*/
 ::selection {
@@ -1059,7 +1055,7 @@ btn:focus {
   .background {
     width: 100%;
     background: rgba(0, 0, 0, 0.7) url("../img/comp-unsplash-resp.jpg");
-    /*background-position-x: center;*/
+    background-size: cover;
     background-blend-mode: darken;
     height: 50vh;
   }
