@@ -31,8 +31,8 @@
 
 .hover:hover,
 hover:active {
-  color: #b60d0d;
-  text-decoration: none;
+  color: aqua;
+  text-decoration: underline;
   border: 0px solid black;
   border-bottom: greenyellow;
   border-radius: 2px;
