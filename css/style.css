@@ -1052,6 +1052,14 @@ btn:focus {
 }
 
 @media only screen and (max-width: 620px) {
+  .box-book {
+    padding: 30px;
+    margin: auto;
+    background: #d3d3d3;
+    background-clip: padding-box;
+    color: black;
+    border-radius: 5px;
+  }
   .background {
     width: 100%;
     background: rgba(0, 0, 0, 0.7) url("../img/comp-unsplash-resp.jpg");
