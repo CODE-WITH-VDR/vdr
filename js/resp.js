@@ -26,20 +26,12 @@ btnScrollToTop.addEventListener("click",function(){
     window.scrollTo(0,0);
 })
 
-var dark = document.getElementById("dark-mode");
-var light = document.getElementById("light-mode");
 $(".change").on("click", function () {
   if ($("body").hasClass("dark")) {
       $("body").removeClass("dark")
-      dark.pause();
-      light.play();
       $(".change").text("OFF");
   } else {
-      $("body").addClass("dark");
-      dark.pause();
-      light.pause();
-      dark.play();
-      
+      $("body").addClass("dark");      
       $(".change").text("ON");
   }
 
