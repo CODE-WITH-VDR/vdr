@@ -26,14 +26,23 @@ btnScrollToTop.addEventListener("click",function(){
     window.scrollTo(0,0);
 })
 
+var dark = document.getElementById("dark-mode");
+var light = document.getElementById("light-mode");
 $(".change").on("click", function () {
   if ($("body").hasClass("dark")) {
-      $("body").removeClass("dark");
+      $("body").removeClass("dark")
+      dark.pause();
+      light.play();
       $(".change").text("OFF");
   } else {
       $("body").addClass("dark");
+      dark.pause();
+      light.pause();
+      dark.play();
+      
       $(".change").text("ON");
   }
+
 });
 
 const f = document.getElementById('example');
@@ -51,3 +60,25 @@ function submitted(event) {
 f.addEventListener('submit', submitted);
 
 
+
+
+//DISABLE CONTEXT MENU
+document.addEventListener('keydown', function() {
+  if (event.keyCode == 123) {
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    return false;
+  } else if (event.ctrlKey && event.keyCode == 85) {
+    return false;
+  }
+}, false);
+
+if (document.addEventListener) {
+  document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+  }, false);
+} else {
+  document.attachEvent('oncontextmenu', function() {
+  window.event.returnValue = false;
+  });
+}
