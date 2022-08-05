@@ -272,7 +272,6 @@ body {
 .footer-social-links {
   font-size: 14px;
   text-align: center;
-  /*background: rgba(238, 238, 238, 0.877);*/
 }
 
 .footer-social-links a {
@@ -283,8 +282,7 @@ body {
   margin: 0 100px;
   text-align: center;
   display: inline-block;
-  /*color: #111;*/
-
+  color: red;
   -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
   -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
   -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
@@ -327,11 +325,11 @@ body {
 }
 
 .footer-social-links a:hover {
-  color: red;
+  color: white;
 }
 
 .footer-social-links a:hover:before {
-  background: gray;
+  background: red;
 }
 /*-------------------------*/
 ::selection {
@@ -504,7 +502,84 @@ btn5:focus {
 .btn5:active {
   background: green;
 }
+/*---------------------------*/
+.btn6 {
+  padding: 8px 20px;
+  font-family: "Bebas Neue", cursive;
+  border: 2px solid red;
+  border-left: none;
+  border-right: none;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
+.btn6:hover,
+btn6:focus {
+  background: url('/img/python.jpg');
+  background-size: cover;
+  font-size: 0;
+  height: 200px;
+  width: 200px;
+}
+
+.btn6:active::after {
+  transition: all .5s ease;
+  background: red;
+  content: "Redirecting..";
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 900px){
+  .btn6{
+    width: 100px;
+    height: 40px;
+  }
+  .btn6:hover{
+    background: grey;
+    width: 100px;
+    height: 40px;
+  }
+}
+/*---------------------------*/
+.btn7 {
+  padding: 8px 20px;
+  font-family: "Bebas Neue", cursive;
+  border: 2px solid red;
+  border-left: none;
+  border-right: none;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn7:hover,
+btn7:focus {
+  background: url('/img/javascript.jpg');
+  font-size: 0;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
+.btn7:active::before {
+  transition: all .5s ease;
+  background: red;
+  content: "Redirecting..";
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 900px){
+  .btn7{
+    width: 100px;
+    height: 40px;
+  }
+  .btn7:hover{
+    background: grey;
+    width: 100px;
+    height: 40px;
+  }
+}
+/*---------------------------*/
 .btn {
   padding: 8px 20px;
   font-family: "Bebas Neue", cursive;
@@ -1311,7 +1386,7 @@ btn:focus {
     justify-content: center;
   }
   .box {
-    padding: 0px 70px;
+    padding: 0px 20px;
   }
   .disco {
     font-size: 4em;

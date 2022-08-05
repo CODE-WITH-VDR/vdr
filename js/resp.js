@@ -50,8 +50,7 @@ function submitted(event) {
 }
 
 f.addEventListener('submit', submitted);
-
-
+//Reload
 
 
 //DISABLE CONTEXT MENU
