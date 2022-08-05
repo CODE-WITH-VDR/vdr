@@ -516,7 +516,7 @@ btn5:focus {
 
 .btn6:hover,
 btn6:focus {
-  background: url('/img/python.jpg');
+  background: url('../img/python.jpg');
   background-size: cover;
   font-size: 0;
   height: 200px;
@@ -555,7 +555,7 @@ btn6:focus {
 
 .btn7:hover,
 btn7:focus {
-  background: url('/img/javascript.jpg');
+  background: url('../img/javascript.jpg');
   font-size: 0;
   background-size: cover;
   height: 200px;
