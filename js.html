@@ -14,13 +14,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
     </script>
     <script src="js/resp.js"></script>
-    <title>CODE | Python</title>
+    <title>CODE | JavaScript</title>
+    <style>
+    @media screen and (max-width: 900px){
+        .heading{
+            font-size: 20px;
+        }
+    }
+    </style>
 </head>
-
 <body>
     <nav class="navbar background3 h-navresp">
         <ul class="nav-list v-classresp navigation">
-            <li><a title="back to mainpage??" href="/support.html" onclick="alert('Back To Support Page ??')">
+            <li><a title="back to mainpage??" href="support.html" onclick="alert('Back To Support Page ??')">
                     <div class="logo"><img src="img/LOGO.jpg" alt="logo"></div>
                 </a> </li>
 
@@ -30,9 +36,9 @@
                     <span title="Dark-Mode:ON/OFF" class="change">OFF</span>
                 </div>
             </li>
-            <li><a title="Home" href="#Home">Python</a></a></li>
-            <li><a title="About" href="backend/js.html">JavaScript</a></li>
-            <li><a title="Support & Services" href="backend/pg_nt_fnd.htm">Java</a></li>
+            <li><a title="Home" href="python.html">Python</a></a></li>
+            <li><a title="About" href="#Javascript.html">JavaScript</a></li>
+            <li><a title="Support & Services" href="pg_nt_fnd.htm">Java</a></li>
             <li><a title="Contact Me" href="#contact">Contact me</a></li>
         </ul>
         <div class="rightNav v-classresp">
@@ -51,33 +57,33 @@
             <p class="center text-big">CODE-WITH-VDR</p>
         </div>
         <div class="resplogo">
-            <a href="index.html"><img class="nav-resp1"><img src="img/CODE.jpg" alt="logo"></img> </a>
+            <a href="js.html"><img class="nav-resp1"><img src="img/CODE.jpg" alt="logo"></img> </a>
         </div>
     </nav>
     <br>
     <br>
     <div title="Python Code Links" class="box" style="color: black;">
         <div class="PYFILES1">
-            <h1>PYTHON CODE LINKS:- </h1>
+            <h1 class="heading">JAVASCRIPT CODE LINKS:- </h1>
         </div>
         <div class="pythonfiles">
             <div class="Python"><img title="ONEDRIVE" src="img/onedrive.jpg" alt="logo"></div>
-            <h2 class="PYFILES">PYTHON FILES:-</h2>
-            <li class="PYFILES"><a href="https://1drv.ms/u/s!Aoppi5HSZfS4hWZ-HJaucFLm7CYK?e=WaH5if"><button class="btn5"
-                        onclick="alert('Opening Onedrive.')">CLICK HERE</button></a></a></li>
+            <h2 class="PYFILES">JAVASCRIPT FILES:-</h2>
+            <li class="PYFILES"><a href="#Sorry"><button class="btn5"
+                        onclick="alert('Code Is Not Uploded By Admin Yet.')">CLICK HERE</button></a></a></li>
         </div>
         <div class="pythonfiles">
-            <div class="Python"><img title="GITHUB" src="img/github.png" alt="logo"></div>
-            <h2 class="PYFILES">PYTHON FILES:-</h2>
-            <li class="PYFILES"><a href="https://github.com/CODEVDR/Python_Files_vdr.git"><button class="btn5"
-                        onclick="alert('Opening Github')">CLICK
+            <div class="Python"><img title="GITHUB" src="/img/github.png" alt="logo"></div>
+            <h2 class="PYFILES">JAVASCRIPT FILES:-</h2>
+            <li class="PYFILES"><a href="#Sorry"><button class="btn5"
+                        onclick="alert('Code Is Not Uploded By Admin Yet.')">CLICK
                         HERE</button></a></li>
         </div>
         <div class="pythonfiles">
             <div class="Python"><img title="GOOGLE DRIVE" src="img/drive.png" alt="logo"></div>
-            <h2 class="PYFILES">PYTHON FILES:-</h2>
-            <li class="PYFILES"><a href="https://drive.google.com/drive/folders/1L8n56jCLabm4BB91H9-dqTgF1YVk8DqO?usp=sharing"><button class="btn5"
-                        onclick="alert('Opening Google Drive')">CLICK HERE</button></a></a></li>
+            <h2 class="PYFILES">JAVASCRIPT FILES:-</h2>
+            <li class="PYFILES"><a href="#Sorry"><button class="btn5"
+                        onclick="alert('Code Is Not Uploded By Admin Yet.')">CLICK HERE</button></a></a></li>
         </div>
     </div>
     <section class="contact background2" id="contact">
@@ -374,11 +380,11 @@
     </footer>
     <script src="js/resp.js"></script>
     <script>
-        burger=document.querySelector('.burger')
-        navbar=document.querySelector('.navbar')
-        navList=document.querySelector('.nav-list')
-        rightNav=document.querySelector('.rightNav')
-        burger.addEventListener('click',()=>{
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navList = document.querySelector('.nav-list')
+        rightNav = document.querySelector('.rightNav')
+        burger.addEventListener('click', () => {
             rightNav.classList.toggle('v-classresp');
             navList.classList.toggle('v-classresp');
             navbar.classList.toggle('h-navresp');
@@ -386,14 +392,14 @@
     </script>
     <script>
         $(".change").on("click", function () {
-          if ($("body").hasClass("dark")) {
-              $("body").removeClass("dark")
-              $(".change").text("OFF");
-          } else {
-              $("body").addClass("dark");      
-              $(".change").text("ON");
-          }
-      
+            if ($("body").hasClass("dark")) {
+                $("body").removeClass("dark")
+                $(".change").text("OFF");
+            } else {
+                $("body").addClass("dark");
+                $(".change").text("ON");
+            }
+
         });
     </script>
 </body>
