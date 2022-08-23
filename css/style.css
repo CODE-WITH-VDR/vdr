@@ -1260,8 +1260,8 @@ btn:focus {
 
   .thumbnail img {
     flex-direction: column;
-    width: 300px;
-    height: 150px;
+    width: 220px;
+    height: 180px;
     border: 1px solid gray;
     border-radius: 10px;
     margin-top: 10px;
