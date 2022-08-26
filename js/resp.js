@@ -72,5 +72,4 @@ if (document.addEventListener) {
   document.attachEvent('oncontextmenu', function() {
   window.event.returnValue = false;
   });
-}
-*/
+}*/
