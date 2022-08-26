@@ -54,7 +54,7 @@ f.addEventListener('submit', submitted);
 
 
 //DISABLE CONTEXT MENU
-document.addEventListener('keydown', function() {
+/*document.addEventListener('keydown', function() {
   if (event.keyCode == 123) {
     return false;
   } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
@@ -73,3 +73,4 @@ if (document.addEventListener) {
   window.event.returnValue = false;
   });
 }
+*/
