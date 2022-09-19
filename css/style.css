@@ -610,7 +610,7 @@ btn:focus {
   align-items: center;
   justify-content: space-evenly;
   margin: auto;
-  max-width: 80%;
+  max-width: 90%;
   font-family: "Bebas Neue", cursive;
 }
 
@@ -1219,7 +1219,7 @@ btn:focus {
 
   .section {
     flex-direction: column;
-    padding: 0px;
+    padding: 18px;
   }
 
   .sectionleft {
@@ -1260,8 +1260,8 @@ btn:focus {
 
   .thumbnail img {
     flex-direction: column;
-    width: 220px;
-    height: 180px;
+    width: 300px;
+    height: 150px;
     border: 1px solid gray;
     border-radius: 10px;
     margin-top: 10px;
