@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*For Cursor*/
 /*BUTTON TO MAIN PAGE*/
 #btnScrollToTop1 {
@@ -118,9 +121,6 @@ hover:active {
   display: none;
 }
 /*------------------------------*/
-html {
-  scroll-behavior: smooth;
-}
 
 /*CONTACT ME FORM*/
 * {
@@ -268,7 +268,6 @@ body {
 /*-------------------------*/
 /*SOCIAL MEDIA LINKS AND ICONS*/
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
 
 .footer-social-links {
   font-size: 14px;
@@ -423,7 +422,7 @@ body {
 
 .background {
   width: 100%;
-  background: rgba(0,0,0,0.7) url("../img/comp-unsplash.jpg");
+  background: rgba(0, 0, 0, 0.7) url("../img/comp-unsplash.jpg");
   background-size: cover;
   background-blend-mode: darken;
   height: 60vh;
@@ -467,6 +466,13 @@ body {
   font-family: "Bebas Neue", cursive;
   text-align: left;
   line-height: 1.2;
+}
+.text-medium {
+  font-size: 25px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: left;
+  line-height: 1.2;
+  color: grey;
 }
 
 .text-small {
@@ -517,7 +523,7 @@ btn5:focus {
 
 .btn6:hover,
 btn6:focus {
-  background: url('../img/python.jpg');
+  background: url("../img/python.jpg");
   background-size: cover;
   font-size: 0;
   height: 200px;
@@ -525,18 +531,23 @@ btn6:focus {
 }
 
 .btn6:active::after {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   background: red;
   content: "Redirecting..";
   font-size: 20px;
   color: white;
 }
-@media screen and (max-width: 900px){
-  .btn6{
+iframe {
+  width: 855px;
+  height: 498px;
+}
+
+@media screen and (max-width: 900px) {
+  .btn6 {
     width: 100px;
     height: 40px;
   }
-  .btn6:hover{
+  .btn6:hover {
     background: grey;
     width: 100px;
     height: 40px;
@@ -556,25 +567,25 @@ btn6:focus {
 
 .btn7:hover,
 btn7:focus {
-  background: url('../img/javascript.jpg');
+  background: url("../img/javascript.jpg");
   font-size: 0;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .btn7:active::before {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   background: red;
   content: "Redirecting..";
   font-size: 20px;
   color: white;
 }
-@media screen and (max-width: 900px){
-  .btn7{
+@media screen and (max-width: 900px) {
+  .btn7 {
     width: 100px;
     height: 40px;
   }
-  .btn7:hover{
+  .btn7:hover {
     background: grey;
     width: 100px;
     height: 40px;
@@ -793,110 +804,7 @@ btn:focus {
 .middle:active {
   background: red;
 }
-/*RGB EFFECT*/
-.bg {
-  -webkit-perspective: 500px;
-  perspective: 500px;
-}
-.disco {
-  width: 420px;
-  height: 250px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 6em;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
 
-  -webkit-transform: rotateX(25deg) rotateY(20deg) rotateZ(-3deg);
-  transform: rotateX(25deg) rotateY(20deg) rotateZ(-3deg);
-
-  position: absolute;
-  left: 50%;
-  top: 50px;
-  margin-left: -180px;
-
-  -webkit-animation: anim 3s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-
-  animation: anim 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes anim {
-  0% {
-    text-shadow: -6px 4px 0px red;
-  }
-  10% {
-    text-shadow: 4px -6px 0px green;
-  }
-  20% {
-    text-shadow: -9px 4px 0px blue;
-  }
-  30% {
-    text-shadow: 4px -6px 0px yellow;
-  }
-  40% {
-    text-shadow: -8px 4px 0px orange;
-  }
-  50% {
-    text-shadow: 4px 5px 0px purple;
-  }
-  60% {
-    text-shadow: -6px 4px 0px brown;
-  }
-  70% {
-    text-shadow: 4px 7px 0px pink;
-  }
-  80% {
-    text-shadow: -9px -4px 0px lime;
-  }
-  90% {
-    text-shadow: 4px -6px 0px cyan;
-  }
-  100% {
-    text-shadow: -9px 4px 0px teal;
-  }
-}
-
-@keyframes anim {
-  0% {
-    text-shadow: -6px 4px 0px red;
-  }
-  10% {
-    text-shadow: 4px -6px 0px green;
-  }
-  20% {
-    text-shadow: -9px 4px 0px blue;
-  }
-  30% {
-    text-shadow: 4px -6px 0px yellow;
-  }
-  40% {
-    text-shadow: -8px 4px 0px orange;
-  }
-  50% {
-    text-shadow: 4px 5px 0px purple;
-  }
-  60% {
-    text-shadow: -6px 4px 0px brown;
-  }
-  70% {
-    text-shadow: 4px 7px 0px pink;
-  }
-  80% {
-    text-shadow: -9px -4px 0px lime;
-  }
-  90% {
-    text-shadow: 4px -6px 0px cyan;
-  }
-  100% {
-    text-shadow: -9px 4px 0px teal;
-  }
-}
-
-/*----------------------------------*/
 .burger {
   display: none;
   position: absolute;
@@ -953,6 +861,9 @@ btn:focus {
   .text-big {
     font-size: 30px;
   }
+  .text-medium {
+    font-size: 25px;
+  }
 
   .text-small {
     font-size: 16px;
@@ -976,9 +887,20 @@ btn:focus {
   height: 250px;
   width: 300px;
 }
+.imgFluidAbt {
+  height: 718px;
+  width: 354px;
+}
 @media screen and (max-width: 1000px) {
+  iframe{
+    width: 500px;
+    height: 400px;
+  }
   .text-big {
     font-size: 30px;
+  }
+  .text-medium {
+    font-size: 24px;
   }
 
   .text-small {
@@ -1005,6 +927,10 @@ btn:focus {
     height: 300px;
     width: 300px;
   }
+  .imgFluid {
+    height: 700px;
+    width: 300px;
+  }
   .footer-social-links a {
     margin: 0 50px;
   }
@@ -1012,6 +938,9 @@ btn:focus {
 @media screen and (max-width: 900px) {
   .text-big {
     font-size: 20px;
+  }
+  .text-medium {
+    font-size: 16px;
   }
 
   .text-small {
@@ -1042,13 +971,24 @@ btn:focus {
     height: 200px;
     width: 200px;
   }
+  .imgFluidAbt {
+    height: 600px;
+    width: 300px;
+  }
   .footer-social-links a {
     margin: 0 22px;
   }
 }
 @media screen and (max-width: 800px) {
+  iframe{
+    width: 500px;
+    height: 400px;
+  }
   .text-big {
     font-size: 20px;
+  }
+  .text-medium {
+    font-size: 15px;
   }
 
   .text-small {
@@ -1079,6 +1019,10 @@ btn:focus {
     height: 200px;
     width: 200px;
   }
+  .imgFluidAbt {
+    height: 500px;
+    width: 300px;
+  }
   .footer-social-links a {
     margin: 0 22px;
   }
@@ -1086,6 +1030,9 @@ btn:focus {
 @media screen and (max-width: 700px) {
   .text-big {
     font-size: 20px;
+  }
+  .text-medium {
+    font-size: 15px;
   }
 
   .text-small {
@@ -1122,12 +1069,20 @@ btn:focus {
     height: 150px;
     width: 150px;
   }
+  .imgFluidAbt {
+    height: 218px;
+    width: 150px;
+  }
   .footer-social-links a {
     margin: 0 18px;
   }
 }
 
 @media only screen and (max-width: 620px) {
+  iframe{
+    width: 300px;
+    height: 300px;
+  }
   .box-book {
     padding: 30px;
     margin: auto;
@@ -1315,6 +1270,9 @@ btn:focus {
 
   .text-big {
     font-size: 18px;
+  }
+  .text-meidum {
+    font-size: 16px;
   }
 
   .text-small {
