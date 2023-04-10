@@ -32,17 +32,37 @@ btnScrollToTop.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 // Code Ends
-
 // For Changing Themes
-$(".change").on("click", function () {
-  if ($("body").hasClass("dark")) {
-    $("body").removeClass("dark");
-    $(".change").text("OFF");
-  } else {
-    $("body").addClass("dark");
-    $(".change").text("ON");
+const enableDarkMode = () => {
+  $("body").addClass("dark");
+  $(".change").text("ON");
+  document.cookie = "dark";
+};
+const disableDarkMode = () => {
+  $("body").removeClass("dark");
+  $(".change").text("OFF");
+  document.cookie = "light";
+};
+let ele = document.getElementsByClassName("change");
+darkMode = document.cookie;//getting cookie data
+//Mode Check
+if (darkMode === "") {
+  $(".change").on("click", function () {
+    mode = document.body.classList.contains("dark");
+    if (mode == true) {
+      disableDarkMode();
+    } else {
+      enableDarkMode();
+    }
+  });
+} else {
+  if (darkMode === "light") {
+    disableDarkMode();
+  } else if (darkMode === "dark") {
+    enableDarkMode()
+    
   }
-});
+}
 // Code Ends
 
 // For Google Searh
