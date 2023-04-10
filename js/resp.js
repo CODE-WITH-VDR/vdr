@@ -44,24 +44,20 @@ const disableDarkMode = () => {
   document.cookie = "light";
 };
 let ele = document.getElementsByClassName("change");
-darkMode = document.cookie;//getting cookie data
-//Mode Check
-if (darkMode === "") {
-  $(".change").on("click", function () {
-    mode = document.body.classList.contains("dark");
-    if (mode == true) {
-      disableDarkMode();
-    } else {
-      enableDarkMode();
-    }
-  });
-} else {
-  if (darkMode === "light") {
+darkMode = document.cookie; //getting cookie data
+$(".change").on("click", function () {
+  mode = document.body.classList.contains("dark");
+  if (mode == true) {
     disableDarkMode();
-  } else if (darkMode === "dark") {
-    enableDarkMode()
-    
+  } else {
+    enableDarkMode();
   }
+});
+//Mode Check
+if (darkMode === "light") {
+  disableDarkMode();
+} else if (darkMode === "dark") {
+  enableDarkMode();
 }
 // Code Ends
 
