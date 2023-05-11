@@ -12,8 +12,9 @@ html {
 }
 /* For Code Snippets */
 code {
-  font-family: Consolas, "cascadia code";
-  color: greenyellow;
+  font-family: 'Cascadia Code', sans-serif;
+
+color: greenyellow;
   /* background-color: ; */
   padding: 2px;
   font-size: 100%;
