@@ -8,6 +8,26 @@
 html {
   scroll-behavior: smooth;
 }
+/* For Code Snippets */
+code {
+  font-family: Consolas, "cascadia code";
+  color: greenyellow;
+  /* background-color: ; */
+  padding: 2px;
+  font-size: 100%;
+}
+.code_bg {
+  background: rgb(5, 15, 37);
+}
+.codeScroll{
+    margin:2px, 2px;
+    padding:2px;
+    width: 100%;
+    height: 600px;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align:justify;
+}
 /*For Cursor*/
 /*BUTTON TO MAIN PAGE*/
 #btnScrollToTop1 {
@@ -892,7 +912,7 @@ btn:focus {
   width: 354px;
 }
 @media screen and (max-width: 1000px) {
-  iframe{
+  iframe {
     width: 500px;
     height: 400px;
   }
@@ -936,6 +956,18 @@ btn:focus {
   }
 }
 @media screen and (max-width: 900px) {
+  code{
+    font-size: 80%;
+  }
+  .codeScroll{
+    margin:4px, 4px;
+    padding:10px;
+    width: 90%;
+    height: 500px;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align:justify;
+}
   .text-big {
     font-size: 20px;
   }
@@ -980,7 +1012,7 @@ btn:focus {
   }
 }
 @media screen and (max-width: 800px) {
-  iframe{
+  iframe {
     width: 500px;
     height: 400px;
   }
@@ -1079,7 +1111,7 @@ btn:focus {
 }
 
 @media only screen and (max-width: 620px) {
-  iframe{
+  iframe {
     width: 300px;
     height: 300px;
   }

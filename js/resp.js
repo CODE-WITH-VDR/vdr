@@ -12,18 +12,20 @@ burger.addEventListener("click", () => {
 // Code Ends
 
 //For Storing Data In Google Form
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbwyQDZNJx4rirna1Xv_oHnjAD2gFKnAHZOXGe7X9YqudzgLCMJYAomjne1pP6UjLkVyLA/exec";
-const form = document.forms["google-sheet"];
+try {
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbwyQDZNJx4rirna1Xv_oHnjAD2gFKnAHZOXGe7X9YqudzgLCMJYAomjne1pP6UjLkVyLA/exec";
+  const form = document.forms["google-sheet"];
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) =>
-      alert("Thanks for Contacting me..! I Will Contact You Soon...")
-    )
-    .catch((error) => console.error("Error!", error.message));
-});
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) =>
+        alert("Thanks for Contacting me..! I Will Contact You Soon...")
+      )
+      .catch((error) => console.error("Error!", error.message));
+  });
+} catch (error) {}
 // Code Ends
 
 // For Sccrolling To Top
@@ -32,17 +34,33 @@ btnScrollToTop.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 // Code Ends
-
 // For Changing Themes
+const enableDarkMode = () => {
+  $("body").addClass("dark");
+  $(".change").text("ON");
+  document.cookie = "dark";
+};
+const disableDarkMode = () => {
+  $("body").removeClass("dark");
+  $(".change").text("OFF");
+  document.cookie = "light";
+};
+let ele = document.getElementsByClassName("change");
+darkMode = document.cookie; //getting cookie data
 $(".change").on("click", function () {
-  if ($("body").hasClass("dark")) {
-    $("body").removeClass("dark");
-    $(".change").text("OFF");
+  mode = document.body.classList.contains("dark");
+  if (mode == true) {
+    disableDarkMode();
   } else {
-    $("body").addClass("dark");
-    $(".change").text("ON");
+    enableDarkMode();
   }
 });
+//Mode Check
+if (darkMode === "light") {
+  disableDarkMode();
+} else if (darkMode === "dark") {
+  enableDarkMode();
+}
 // Code Ends
 
 // For Google Searh
@@ -80,30 +98,30 @@ btn1.onclick = () => {
 // Code Ends
 
 //DISABLE CONTEXT MENU
-document.addEventListener(
-  "keydown",
-  function () {
-    if (event.keyCode == 123) {
-      return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-      return false;
-    } else if (event.ctrlKey && event.keyCode == 85) {
-      return false;
-    }
-  },
-  false
-);
+// document.addEventListener(
+//   "keydown",
+//   function () {
+//     if (event.keyCode == 123) {
+//       return false;
+//     } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+//       return false;
+//     } else if (event.ctrlKey && event.keyCode == 85) {
+//       return false;
+//     }
+//   },
+//   false
+// );
 
-if (document.addEventListener) {
-  document.addEventListener(
-    "contextmenu",
-    function (e) {
-      e.preventDefault();
-    },
-    false
-  );
-} else {
-  document.attachEvent("oncontextmenu", function () {
-    window.event.returnValue = false;
-  });
-}
+// if (document.addEventListener) {
+//   document.addEventListener(
+//     "contextmenu",
+//     function (e) {
+//       e.preventDefault();
+//     },
+//     false
+//   );
+// } else {
+//   document.attachEvent("oncontextmenu", function () {
+//     window.event.returnValue = false;
+//   });
+// }
