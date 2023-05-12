@@ -12,20 +12,19 @@ burger.addEventListener("click", () => {
 // Code Ends
 
 //For Storing Data In Google Form
-try {
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbwyQDZNJx4rirna1Xv_oHnjAD2gFKnAHZOXGe7X9YqudzgLCMJYAomjne1pP6UjLkVyLA/exec";
-  const form = document.forms["google-sheet"];
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbwyQDZNJx4rirna1Xv_oHnjAD2gFKnAHZOXGe7X9YqudzgLCMJYAomjne1pP6UjLkVyLA/exec";
+const form = document.forms["google-sheet"];
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then((response) =>
-        alert("Thanks for Contacting me..! I Will Contact You Soon...")
-      )
-      .catch((error) => console.error("Error!", error.message));
-  });
-} catch (error) {}
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) =>
+      alert("Thanks for Contacting me..! I Will Contact You Soon...")
+    )
+    .catch((error) => console.error("Error!", error.message));
+});
+
 // Code Ends
 
 // For Sccrolling To Top
@@ -98,30 +97,30 @@ btn1.onclick = () => {
 // Code Ends
 
 //DISABLE CONTEXT MENU
-// document.addEventListener(
-//   "keydown",
-//   function () {
-//     if (event.keyCode == 123) {
-//       return false;
-//     } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-//       return false;
-//     } else if (event.ctrlKey && event.keyCode == 85) {
-//       return false;
-//     }
-//   },
-//   false
-// );
+document.addEventListener(
+  "keydown",
+  function () {
+    if (event.keyCode == 123) {
+      return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+      return false;
+    } else if (event.ctrlKey && event.keyCode == 85) {
+      return false;
+    }
+  },
+  false
+);
 
-// if (document.addEventListener) {
-//   document.addEventListener(
-//     "contextmenu",
-//     function (e) {
-//       e.preventDefault();
-//     },
-//     false
-//   );
-// } else {
-//   document.attachEvent("oncontextmenu", function () {
-//     window.event.returnValue = false;
-//   });
-// }
+if (document.addEventListener) {
+  document.addEventListener(
+    "contextmenu",
+    function (e) {
+      e.preventDefault();
+    },
+    false
+  );
+} else {
+  document.attachEvent("oncontextmenu", function () {
+    window.event.returnValue = false;
+  });
+}
