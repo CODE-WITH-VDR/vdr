@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-@import url('https://fonts.cdnfonts.com/css/cascadia-code');
-                
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -12,9 +11,8 @@ html {
 }
 /* For Code Snippets */
 code {
-  font-family: 'Cascadia Code', sans-serif;
-
-color: greenyellow;
+  font-family: 'Source Code Pro', monospace;
+  color: greenyellow;
   /* background-color: ; */
   padding: 2px;
   font-size: 100%;
@@ -965,7 +963,7 @@ btn:focus {
   .codeScroll{
     margin:4px, 4px;
     padding:10px;
-    width: 100%;
+    width: 90%;
     height: 500px;
     overflow-x: auto;
     overflow-y: auto;
