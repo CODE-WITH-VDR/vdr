@@ -167,34 +167,37 @@ hover:active {
 
 input[type="text"],
 select {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid;
-  border-radius: 4px;
+  border-radius: 20px;
   box-sizing: border-box;
 }
 
 input[type="email"],
 select {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid;
-  border-radius: 4px;
+  border-radius: 20px;
   box-sizing: border-box;
 }
 
 input[type="submit"] {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
   width: 100%;
   background-color: red;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -689,12 +692,12 @@ btn:focus {
   margin-top: 19px;
 }
 .thumbnail1 img {
-  border: 5px solid grey;
+  box-shadow : 0 0 10px rgb(0, 0, 0, 0.25);
+  flex-direction: column;
   border-radius: 25px;
   margin-top: 19px;
   height: 400px;
   width: 300px;
-  margin-left: 230px;
 }
 
 .text-center {
@@ -798,26 +801,23 @@ btn:focus {
 /*----------------------------------------------*/
 /*BOOKS BACKGROUND BOX*/
 .box-book {
+  border: 5px solid greenyellow;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
   padding: 30px;
   margin: auto;
   background: #d3d3d3;
   background-clip: padding-box;
   color: black;
-  border-radius: 20px;
-}
-.box-book:hover {
-  background: #e5e4e2;
+  border-radius: 50px;
 }
 .box-book2 {
+  border: 5px solid greenyellow;
   padding: 30px;
   margin: auto;
   background: #d3d3d3;
   background-clip: padding-box;
   color: black;
-  border-radius: 20px;
-}
-.box-book2:hover {
-  background: F88379;
+  border-radius: 50px;
 }
 /*----------------------------------*/
 .copy {
@@ -1026,6 +1026,10 @@ btn:focus {
   }
 }
 @media screen and (max-width: 800px) {
+  .thumbnail1{
+    display: inline;
+    flex-direction: column;
+  }
   iframe {
     width: 500px;
     height: 400px;
@@ -1135,7 +1139,7 @@ btn:focus {
     background: #d3d3d3;
     background-clip: padding-box;
     color: black;
-    border-radius: 5px;
+    border-radius: 25px;
   }
   .background {
     width: 100%;
@@ -1263,9 +1267,9 @@ btn:focus {
   .thumbnail img {
     flex-direction: column;
     width: 300px;
-    height: 150px;
+    height: 200px;
     box-shadow : 0 0 10px rgb(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 25px;
     margin-top: 10px;
   }
 
@@ -1341,11 +1345,12 @@ btn:focus {
     display: block;
   }
   .thumbnail1 img {
+    flex-direction: column;
     border-radius: 25px;
     margin-top: 19px;
-    height: 250px;
-    width: 200px;
-    margin-left: 45px;
+    height: 350px;
+    width: 300px;
+    margin-left: 5px;
   }
   .new {
     display: none;
