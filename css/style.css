@@ -801,7 +801,7 @@ btn:focus {
 /*----------------------------------------------*/
 /*BOOKS BACKGROUND BOX*/
 .box-book {
-  border: 5px solid red;
+  border: 5px solid;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
   padding: 30px;
   margin: auto;
@@ -811,7 +811,7 @@ btn:focus {
   border-radius: 50px;
 }
 .box-book2 {
-  border: 5px solid red;
+  border: 5px solid;
   padding: 30px;
   margin: auto;
   background: #d3d3d3;
