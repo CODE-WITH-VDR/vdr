@@ -78,22 +78,24 @@ function submitted(event) {
 f.addEventListener("submit", submitted);
 // Code Ends
 
-//For Youtube video in support page
-var substack = document.createElement("iframe");
-var loadSubscribe = document.getElementById("load-subscribe");
-substack.src = "https://www.youtube.com/embed/JKUZ_F_65nU";
-let btn1 = document.getElementById("ytvideo");
-let ctr = 0;
-btn1.onclick = () => {
-  if (ctr % 2 == 0) {
-    loadSubscribe.appendChild(substack);
-    btn1.innerHTML = "❌Close";
-  } else {
-    loadSubscribe.removeChild(substack);
-    btn1.innerHTML = "Watch Video";
-  }
-  ctr++;
-};
+try {
+  //For Youtube video in support page
+  var substack = document.createElement("iframe");
+  var loadSubscribe = document.getElementById("load-subscribe");
+  substack.src = "https://www.youtube.com/embed/JKUZ_F_65nU";
+  let btn1 = document.getElementById("ytvideo");
+  let ctr = 0;
+  btn1.onclick = () => {
+    if (ctr % 2 == 0) {
+      loadSubscribe.appendChild(substack);
+      btn1.innerHTML = "❌Close";
+    } else {
+      loadSubscribe.removeChild(substack);
+      btn1.innerHTML = "Watch Video";
+    }
+    ctr++;
+  };
+} catch (error) {}
 // Code Ends
 
 //DISABLE CONTEXT MENU
