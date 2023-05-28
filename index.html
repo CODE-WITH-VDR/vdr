@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <title>Home | CODE-WITH-VDR</title>
 </head>
 
-<body>
+<body class="dark">
     <!-- Welcome Audio For Homepage  -->
     <audio controls autoplay class="none" id="wlc-audio">
         <source src="audio/welcome_audio.mp3" type="audio/mpeg">
@@ -33,7 +33,7 @@
                 <!-- For Mode Change  -->
                 <div class="mode">
                     <span title="Dark-Mode:ON/OFF" class="dark-mode">Dark mode:</span>
-                    <span title="Dark-Mode:ON/OFF" class="change">OFF</span>
+                    <span title="Dark-Mode:ON/OFF" class="change">ON</span>
                 </div>
             </li>
             <li><a title="Home" href="#Home">Home</a></a></li>
@@ -69,11 +69,10 @@
         <div class="box-main left">
             <img src="img/LOGO.jpg" alt="" class="new">
             <div class="firstHalf">
-                <p class="text-big">The Future codder is here</p>
-                <p class="text-small">Faster, smarter programming, with fewer bugs. Those are the promises coming from
-                    the creators of the latest round of languages to capture the attention of programmers.The future of
-                    coding requires stability and good practices so our innovations will work. In fact, our projects are
-                    often so much bigger now, we need the innovation more than ever.</p>
+                <p class="text-big">The Developer is here</p>
+                <p class="text-small">Faster, smarter programming, with fewer bugs.
+                    <span id="element"></span>
+                </p>
 
                 <div class="button">
                     <p><a title="Subscribe To My YouTube Channel"
@@ -98,7 +97,7 @@
     <!-- Content For Python  -->
     <section class="section background1">
         <div class="paras">
-            <p class="sectionTag  text-big">About Python</p>
+            <p class="sectionTag  text-big" id="python">About Python</p>
             <p class="sectionSubTag text-small">Python is an interpreted high-level general-purpose programming
                 language. Its design philosophy emphasizes code readability with its use of significant indentation. Its
                 language constructs as well as its object-oriented approach aim to help programmers write clear, logical
@@ -323,7 +322,7 @@
     <br>
     <!-- Contact Form  -->
     <section class="contact background2" id="contact">
-        <i style="padding:30px;  font-size:40px " class="text-center fa">Contact Me &#xf2bc;</i>
+        <i id="formHead" class="fa">Contact Me &#xf2bc;</i>
         <div class="any">
             <form id="google-sheet">
                 <label for="fname">Name</label>
@@ -599,7 +598,6 @@
     <br>
     <!-- Footer Section Including Social Media Links  -->
     <footer>
-        <p class="copy bgd"> Copyright &copy CODE-WITH-VDR,All Rights Reserved.
         <div class="footer-social-links">
             <a href="https://www.facebook.com/vdurgeshwar.hack" title="Facebook"><i class="fa fa-facebook"></i></a>
             <a href="#Server Down Try again later" title="Twitter"><i class="fa fa-twitter"></i></a>
@@ -611,6 +609,7 @@
             <br>
             <br>
             <br>
+            <p class="copy bgd"> Copyright &copy CODE-WITH-VDR,All Rights Reserved.
             <br>
             <br>
             <br>
@@ -621,5 +620,13 @@
 </body>
 <!-- Script Attachment To HTML  -->
 <script src="js/resp.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ["Welcome to CodeWithVdr, your one-stop destination for all things technology! Whether you're a beginner looking to embark on your coding journey or an experienced developer seeking to enhance your skills, you've come to the right place.", "At CodeWithVdr, we believe that technology is constantly evolving, shaping the world around us. That's why we're committed to providing you with the latest knowledge and insights to keep you at the forefront of this ever-changing landscape.", "Our team of expert instructors and industry professionals are dedicated to bringing you high-quality content that covers a wide range of programming languages, frameworks, and technologies. From Python to JavaScript, from machine learning to blockchain, we've got you covered." , "Stay updated with our in-depth tutorials, practical examples, and hands-on projects that will not only help you grasp the concepts but also build real-world applications. Whether you're interested in web development, mobile app development, data science, or cybersecurity, we have the resources to help you succeed." , "Join our vibrant community of learners and connect with fellow enthusiasts from around the globe. Engage in discussions, ask questions, and collaborate on exciting projects. We believe in the power of community, and together, we can achieve remarkable things." , "So, step into the world of CodeWithVdr and unlock your full potential in the realm of known technology. Let's embark on this journey together and embrace the possibilities that await us!"],
+      typeSpeed: 10,
+    });
+  </script>
 </html>
