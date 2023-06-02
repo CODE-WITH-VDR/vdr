@@ -97,6 +97,16 @@ try {
   };
 } catch (error) {}
 // Code Ends
+// copyright upgrader
+const d = new Date();
+let year = d.getFullYear();
+let copyright = document.getElementsByClassName("copy")[0];
+copyright.innerHTML =
+  "Copyright &copy " + year + " CodeWithVdr , All Rights Reserved";
+// Ends
+// Removing underline
+document.getElementsByTagName("u")[0].style.textDecoration = "none";
+document.getElementsByTagName("u")[1].style.textDecoration = "none";
 
 //DISABLE CONTEXT MENU
 // document.addEventListener(

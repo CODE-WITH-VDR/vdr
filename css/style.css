@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 html {
   scroll-behavior: smooth;
+}
+body {
+  transition: color 1s, background-color 1s;
 }
 /* For Code Snippets */
 code {
@@ -23,7 +26,8 @@ code {
   box-shadow: 0 0 30px red;
 } */
 .codeScroll {
-  box-shadow: 0 0 10px blue;
+  box-shadow: 0 0 10px greenyellow;
+  border: 2px solid greenyellow;
   border-radius: 25px;
   margin: 2px, 2px;
   padding: 2px;
@@ -40,9 +44,12 @@ code {
 .codeScroll::-webkit-scrollbar {
   display: none;
 }
-
+.codeScroll:hover,
+.codeScroll:focus {
+  border-radius: 0;
+}
 .borderCode {
-  box-shadow: 0 0 30px green;
+  box-shadow: 0 0 10px greenyellow;
   border: 2px solid greenyellow;
   border-radius: 25px;
   background: grey;
@@ -72,6 +79,7 @@ code {
 /*-------------------------*/
 /*HOVERING EFFECTS*/
 .hover {
+  transition: all 0.5s;
   text-decoration: none;
   color: red;
 }
@@ -169,16 +177,27 @@ hover:active {
 * {
   box-sizing: border-box;
 }
-#formHead{
-  margin: 0px;
+#formHead {
+  transition: all 0.7s;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
   justify-content: center;
   color: gray;
   font-size: 3rem;
   display: flex;
   align-items: center;
 }
+#formHead:hover {
+  color: red;
+  border-left: none;
+  border-right: none;
+  border: 2px solid;
+}
 input[type="text"],
 select {
+  outline: none;
+  transition: all 1s;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
   width: 100%;
   font-family: "Source Code Pro", monospace;
@@ -189,14 +208,15 @@ select {
   border-radius: 20px;
   box-sizing: border-box;
 }
-input[type="text"]:hover {
-  border: 5px solid #07eb12;
-}
+input[type="text"]:hover,
 input[type="text"]:focus {
-  box-shadow: 0 0 10px #07eb12;
+  border: 5px solid red;
+  box-shadow: 0 0 10px red;
 }
 input[type="email"],
 select {
+  outline: none;
+  transition: all 1s;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
   width: 100%;
   font-family: "Source Code Pro", monospace;
@@ -207,12 +227,12 @@ select {
   border-radius: 20px;
   box-sizing: border-box;
 }
-input[type="email"]:hover {
-  border: 5px solid #07eb12;
-}
+input[type="email"]:hover,
 input[type="email"]:focus {
-  box-shadow: 0 0 10px #07eb12;
+  border: 5px solid red;
+  box-shadow: 0 0 10px red;
 }
+
 input[type="submit"] {
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
   width: 100%;
@@ -248,10 +268,12 @@ form.example input[type="text1"] {
   border-left: none;
   border-right: none;
   border-top: none;
+  transition: all 1s;
   border-bottom: 2px solid grey;
   float: left;
   width: 80%;
   background: none;
+  outline: none;
 }
 
 form.example input[type="text1"]:focus {
@@ -312,6 +334,7 @@ body {
 .dark {
   background-color: black;
   color: #e6e6e6;
+  transition: color 1s, background-color 1s;
 }
 /*----------------------------*/
 /*BUTTON FOR LEFT ARROW*/
@@ -401,6 +424,7 @@ body {
   color: white;
   background: red;
 }
+/*  */
 .logo {
   display: flex;
   justify-content: center;
@@ -536,7 +560,7 @@ body {
 }
 .text-medium {
   font-size: 25px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   line-height: 1.2;
   color: grey;
@@ -544,7 +568,7 @@ body {
 
 .text-small {
   font-size: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: justify;
   line-height: 1.2;
 }
@@ -578,6 +602,7 @@ btn5:focus {
 }
 /*---------------------------*/
 .btn6 {
+  transition: color 0.5s, background-color 0.5s;
   box-shadow: 0 0 10px;
   padding: 8px 20px;
   font-family: "Bebas Neue", cursive;
@@ -590,23 +615,26 @@ btn5:focus {
 }
 
 .btn6:hover,
-btn6:focus {
+.btn6:focus {
   background-size: cover;
-  /* font-size: 0; */
-  height: 50px;
-  width: 150px;
+  color: #07eb12;
+  background-color: gray;
 }
 /* Custom Hr */
-hr{
+hr {
   border-top: 10px dashed red;
   border-radius: 25px;
   margin: 0 25px;
 }
 /* Ends */
+/* custom marquee */
+marquee {
+  color: gray;
+}
+/* Ends */
 .btn6:active::after {
   transition: all 0.5s ease;
   background: red;
-  content: "Redirecting..";
   font-size: 20px;
   color: white;
 }
@@ -642,6 +670,7 @@ iframe {
 }
 /*---------------------------*/
 .btn {
+  transition: border-bottom 1s;
   padding: 8px 20px;
   font-family: "Bebas Neue", cursive;
   border: 2px solid none;
@@ -653,7 +682,6 @@ iframe {
   background: none;
   color: red;
   cursor: pointer;
-  border-bottom: 2px solid none;
 }
 
 .btn:hover,
@@ -785,7 +813,7 @@ btn:focus {
   align-items: center;
   justify-content: center;
   padding: 0px 30px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: justify;
 }
 .PYFILES:hover {
@@ -875,7 +903,7 @@ btn:focus {
   background-color: white;
   height: 3px;
   margin: 3px 3px;
-  border-radius: 1000px;
+  border-radius: 50px;
 }
 .line:active {
   background-color: red;
@@ -1218,7 +1246,7 @@ btn:focus {
     align-items: center;
     justify-content: center;
     height: 360px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
 
   .rightnav {
@@ -1401,11 +1429,11 @@ btn:focus {
     align-items: center;
     justify-content: center;
     padding: 0px 0px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: justify;
   }
   .PYFILES1 {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 12px;
     padding: 30px 60px;
     background-color: red;
