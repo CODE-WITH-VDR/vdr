@@ -94,6 +94,37 @@ hover:active {
 }
 
 /*---------------------------*/
+/* images */
+/*---------------------------*/
+
+.scroll-container {
+  display: flex;
+  width: 180%;
+  white-space: break-spaces;
+  overflow-x: auto;
+  overflow-y: auto;
+  flex-direction: row;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+@media screen and (max-width: 600px) {
+  .scroll-container {
+    width: 90%;
+  }
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container img {
+  margin: 35px;
+  margin-left: 30px;
+}
+/*---------------------------*/
+
+/*---------------------------*/
 /*SCROLL TO TOP*/
 #btnScrollToTop {
   position: fixed;
