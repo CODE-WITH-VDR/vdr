@@ -697,8 +697,6 @@ iframe {
   cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
-}
 /*---------------------------*/
 .btn {
   transition: border-bottom 1s;
@@ -970,6 +968,11 @@ btn:focus {
 }
 
 @media screen and (max-width: 900px) {
+  #formHead{
+    font-size: 2rem;
+    width: 60%;
+    margin-left: 20%;
+  }
   .text-big {
     font-size: 30px;
   }
@@ -1277,7 +1280,7 @@ btn:focus {
     align-items: center;
     justify-content: center;
     height: 360px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
 
   .rightnav {
