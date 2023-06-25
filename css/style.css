@@ -209,10 +209,8 @@ hover:active {
   box-sizing: border-box;
 }
 #formHead {
-  transition: all 0.7s;
-  width: 20%;
-  margin-left: 40%;
-  margin-right: 40%;
+  transition: color 0.5s;
+  width: 100%;
   justify-content: center;
   color: gray;
   font-size: 3rem;
