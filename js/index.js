@@ -102,7 +102,7 @@ const d = new Date();
 let year = d.getFullYear();
 let copyright = document.getElementsByClassName("copy")[0];
 copyright.innerHTML =
-  "Copyright &copy " + year + " CodeWithVdr , All Rights Reserved";
+  "Copyright &copy 2020-" + year + " CodeWithVdr , All Rights Reserved";
 // Ends
 // Removing underline
 document.getElementsByTagName("u")[0].style.textDecoration = "none";
