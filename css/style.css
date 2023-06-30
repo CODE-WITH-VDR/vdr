@@ -221,7 +221,8 @@ hover:active {
   color: red;
   border-left: none;
   border-right: none;
-  border: 2px solid;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
 input[type="text"],
 select {
@@ -968,8 +969,6 @@ btn:focus {
 @media screen and (max-width: 900px) {
   #formHead{
     font-size: 2rem;
-    width: 60%;
-    margin-left: 20%;
   }
   .text-big {
     font-size: 30px;
