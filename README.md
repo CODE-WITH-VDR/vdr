@@ -31,23 +31,22 @@ To install and run the CodeWithVDR website locally, follow these steps:
 
 1. Clone this repository to your local machine using the following command:
    ```
-   git clone https://github.com/your-username/codewithvdr.git
+   git clone https://github.com/CODEVDR/v.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd codewithvdr
+   cd v
    ```
 
 3. Install the required dependencies using a package manager such as npm or yarn:
    ```
-   npm install
+   NO MODULES REQUIRED
    ```
 
 4. Set up the necessary environment variables. You can create a `.env` file in the root directory and provide the required variables. For example:
    ```
-   PORT=3000
-   API_KEY=your-api-key
+   PORT = 3000
    ```
 
 5. Build the project:
