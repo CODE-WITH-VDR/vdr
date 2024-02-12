@@ -1,3 +1,4 @@
+window.location.href = "https://codewithvdr.vercel.app";
 // For Add Funcnality of Navbar
 burger = document.querySelector(".burger");
 navbar = document.querySelector(".navbar");
